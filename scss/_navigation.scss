@@ -1,0 +1,36 @@
+nav.main-navigation {
+
+   ul {
+      &.nav-links {
+         align-items: center;
+         background-color: $cherry-wood;
+         display: flex;
+         height: 2.5rem;
+         justify-content: space-around;
+         padding: 2rem;
+   
+         .logo {
+            margin-left: 1rem;
+            margin-right: auto;
+            width: 5rem;
+
+            h3 {
+               color: #fff;
+               font-size: 1.5rem;
+            }
+         }
+   
+         li {
+            margin-right: 3rem;
+   
+            a {
+               color: $gold-pale;
+               font-family: $opensans;
+               font-size: 1.3rem;
+               font-weight: 600;
+               letter-spacing: 1.8px;
+            }
+         }
+      }
+   }   
+}

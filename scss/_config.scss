@@ -1,0 +1,58 @@
+$roboto: 'Roboto',
+sans-serif;
+$opensans: 'Open Sans',
+sans-serif;
+
+
+$rembase: 62.5%;
+
+$cta-color: hsl(19, 100%, 50%);
+
+
+$gray-light: #c7c7c7;
+$gray: #5c5c5c;
+$gray-dark: #052323;
+
+$green-btn: rgb(1, 132, 1);
+$green-dark: rgb(0, 18, 0);
+$link-hover: #d6ffae;
+
+$gold: rgb(231, 214, 135);
+$gold-dark: rgb(188, 181, 0);
+$gold-pale: rgb(255, 250, 234);
+
+$cherry-wood: hsl(8, 89%, 4%);
+
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@mixin mediaSm {
+  @media only screen and (max-width:500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media only screen and (max-width:900px) and (min-width: 501px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media only screen and (min-width: 901px) {
+    @content;
+  }
+}
+
+
+

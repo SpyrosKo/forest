@@ -1,0 +1,299 @@
+@include mediaMd {
+   body {}
+
+   .btn {
+      background-color: $cta-color;
+      border: none;
+      border-radius: 3px;
+      box-shadow: 2px 2px 0 0 hsl(19, 100%, 32%);
+      cursor: pointer;
+      display: block;
+      grid-column: 2;
+      grid-row: 3;
+      max-width: 10rem;
+      margin-top: 4rem;
+      padding: 2rem;
+   }
+
+   // HEADER
+
+   #header {
+      background-position: left;
+      background-image: url(../images/1000px_filip-zrnzevic-G-unsplash.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: grid;
+      grid-template-columns: 1rem auto 1rem;
+      grid-template-rows: 10rem min-content min-content max-content;
+      height: 100%;
+      min-height: 100vh;
+
+      h1 {
+         background-color: hsla(0, 0%, 0%, 0.1);
+         color: $gold-pale;
+         font-size: 5rem;
+         grid-row: 2;
+         grid-column: 1/4;
+         line-height: 75px;
+         padding-top: 7rem;
+         padding: 2.5rem;
+         text-transform: uppercase;
+      }
+
+      h2 {
+         background-color: hsla(0, 0%, 0%, 0.1);
+         border-radius: 5px;
+         color: $gold-pale;
+         font-size: 1.7rem;
+         grid-row: 3;
+         grid-column: 1/4;
+         letter-spacing: 2px;
+         line-height: 28px;
+         padding-top: 2.5rem;
+         padding: 2.5rem;
+         text-transform: uppercase;
+         -webkit-text-stroke: 1px hsla(0, 0%, 0%, 0.1);
+         word-spacing: 2px;
+      }
+
+      .donate-cta {
+         display: block;
+         grid-column: 2;
+         grid-row: 4;
+         margin: 6rem auto;
+
+         a {
+            color: $gold-pale;
+            font-weight: 600;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+         }
+      }
+   }
+
+   // MAIN
+
+   #main {
+      display: grid;
+      grid-template-columns: 1.5rem auto 1.5rem;
+
+      // ABOUT
+
+      #about {
+         display: block;
+         grid-column: 2;
+         grid-row: 1;
+
+         h2 {
+            font-size: 2.7rem;
+            margin: 7rem 0;
+            text-align: center;
+         }
+
+         p {
+            font-size: 2rem;
+            line-height: 32px;
+         }
+
+         figure {
+            margin: 3rem 0;
+
+            blockquote {
+               color: #00a0dc;
+               font-size: 3rem;
+               font-weight: 500;
+               line-height: 46px;
+               padding-left: 1rem;
+            }
+
+            p {
+               color: #00a0dc;
+               font-size: 2.4rem;
+               font-style: italic;
+               padding-left: 2em;
+               padding-top: 0;
+            }
+         }
+      }
+
+      // MEMBER CTA
+
+      #member-cta {
+         grid-column: 2;
+         grid-row: 2;
+         height: 5rem;
+         margin: 0 0 6rem 0;
+
+         p {
+            color: $cta-color;
+            font-weight: 600;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            margin: 0;
+            text-align: left;
+            text-transform: uppercase;
+            word-spacing: 1px;
+         }
+
+         .member-btn {
+            display: block;
+            margin-top: 1rem;
+            text-align: center;
+
+            a {
+               color: $gold-pale;
+               font-weight: 600;
+               font-size: 1.5rem;
+            }
+         }
+      }
+
+      // FURTHER INFO
+
+      #further-info {
+         display: block;
+         grid-column: 2;
+         grid-row: 3;
+         margin-top: 6em;
+         font-size: 1.5rem;
+         line-height: 21px;
+
+         h2 {
+            font-weight: 600;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            text-decoration: underline;
+         }
+
+         ul {
+
+            li {
+               font-weight: 600;
+               font-family: $roboto;
+
+               span {
+                  color: $gray;
+                  font-family: $roboto;
+                  font-weight: 100;
+               }
+            }
+         }
+      }
+
+      #photos {
+         background-color: $green-dark;
+         grid-column: 1/4;
+         grid-row: 4;
+         margin-top: 5em;
+
+         .photo-header {
+            padding: 4em;
+            text-align: center;
+
+            h2 {
+               color: $gold-pale;
+               font-size: 2.4rem;
+               font-weight: 500
+            }
+
+            p {
+               color: $gold-pale;
+               font-size: 1.5rem;
+               letter-spacing: 1px;
+               line-height: 25px;
+               margin-bottom: 0;
+            }
+         }
+
+         .photos-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            figure {
+               img {
+                  // border-bottom: 2px solid #243c0b;
+                  display: block;
+                  width: 100%;
+               }
+
+               figcaption {
+                  border-bottom: 2px solid #243c0b;
+                  border-top: 2px solid #243c0b;
+                  color: $gold-pale;
+                  font-size: 2rem;
+                  font-weight: 600;
+                  font-style: italic;
+                  // margin: 1rem 0;
+                  padding: 1rem;
+                  text-align: center;
+               }
+            }
+         }
+      }
+   }
+
+   #footer {
+
+         .media-links {
+
+            a {
+               i {
+                  color: $gold-pale;
+                  background-color: $gray-dark;
+                  border-radius: 10px;
+               }
+            }
+         }
+
+         .story {
+            color: $gold-pale;
+
+            .footer-logo {
+            }
+
+            p {
+               
+            }
+         }
+
+         .sitemap {
+
+            .column {
+
+               h3 {
+                  color: $gold;
+                  
+               }
+
+               li {
+
+                  a {
+                     font-weight: 400;
+                  }
+               }
+               
+            }
+         }
+
+         .social-links {
+
+            a {
+               
+            }
+         }
+
+         .bottom {
+            color: $gold-pale;
+            .copyright {
+            }
+   
+            .contact-info {
+            }
+         }
+      }
+}
+
+////////////////////////////////////
+////////////////////////////////////
+////////////////////////////////////
+

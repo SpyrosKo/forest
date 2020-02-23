@@ -1,0 +1,49 @@
+body {}
+
+.header {
+   background: url('../images/bridge-under-white-clouds.jpg') center;
+   background-size: cover;
+   height: 100vh;
+}
+
+.hero {
+   padding-left: 10rem;
+   padding-top: 5rem;
+   width: 100%;
+   max-width: 900px;
+
+   &__heading {
+      color: darken($font-color, 2%);
+      font-size: 4rem;
+      text-transform: uppercase;
+   }
+
+   &__subheading {
+      color: darken($font-color, 2%);
+      font-size: 2rem;
+      line-height: 2.8rem;
+      padding: 1rem 0;
+   }
+
+   &__button {
+      background-color: #ffc107;
+      border-width: 0;
+      border-radius: 25px;
+      font-size: 1.5rem;
+      margin: 2rem 0;
+      padding: 1.2rem;
+      text-transform: uppercase;
+
+      &:focus {
+         outline: none;
+      }
+   }
+
+   &__cta {
+      color: #003302;
+      cursor: pointer;
+      font-weight: bold;
+      outline: none;
+      outline-style: none;
+   }
+}

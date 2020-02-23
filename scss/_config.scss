@@ -1,28 +1,14 @@
-$roboto: 'Roboto',
-sans-serif;
-$opensans: 'Open Sans',
-sans-serif;
+$font-color: #032200;
 
+@font-face {
+  font-family: Mont;
+  src: url(../dist/fonts/Montserrat/Montserrat-Medium.ttf)
+}
 
-$rembase: 62.5%;
-
-$cta-color: hsl(19, 100%, 50%);
-
-
-$gray-light: #c7c7c7;
-$gray: #5c5c5c;
-$gray-dark: #052323;
-
-$green-btn: rgb(1, 132, 1);
-$green-dark: rgb(0, 18, 0);
-$link-hover: #d6ffae;
-
-$gold: rgb(231, 214, 135);
-$gold-dark: rgb(188, 181, 0);
-$gold-pale: rgb(255, 250, 234);
-
-$cherry-wood: hsl(8, 89%, 4%);
-
+@font-face {
+  font-family: MontReg;
+  src: url(../dist/fonts/Montserrat/Montserrat-Regular.ttf)
+}
 
 @keyframes navLinkFade {
   from {
@@ -53,6 +39,3 @@ $cherry-wood: hsl(8, 89%, 4%);
     @content;
   }
 }
-
-
-

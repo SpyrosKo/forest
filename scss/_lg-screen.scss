@@ -1,5 +1,15 @@
 body {}
 
+h2 {
+   font-size: 2rem;
+   padding: 1.5rem 0;
+}
+
+p {
+   line-height: 1.5rem;
+   padding: 1rem 0;
+}
+
 .header {
    background: url('../images/bridge-under-white-clouds.jpg') center;
    background-size: cover;
@@ -7,8 +17,9 @@ body {}
 }
 
 .hero {
-   padding-left: 10rem;
-   padding-top: 5rem;
+   padding-left: 10vw;
+   padding-right: 10vw;
+   padding-top: 3rem;
    width: 100%;
    max-width: 900px;
 
@@ -46,4 +57,48 @@ body {}
       outline: none;
       outline-style: none;
    }
+}
+
+.top-grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   padding: 0 10vw;
+   padding-top: 8rem;
+   width: 100%;
+   max-width: 900px;
+}
+
+.about {
+   grid-column: 1/4;
+
+   &__figure {
+      color: $font-color;
+      font-size: 1.5rem;
+      width: 70vw;
+   }
+
+   &__blockquote {
+      color: $font-color;
+      font-weight: bold;
+      line-height: 2.2rem;
+      padding: 0.1rem 0;
+   }
+
+   &__cite {
+      color: lighten($font-color, 10%);
+      font-size: 1.2rem;
+      font-weight: thin;
+   }
+}
+
+.member {
+   grid-column: 1/4;
+   grid-row: 2;
+   padding: 5rem;
+   text-align: center;
+}
+
+.nonprofit {
+   grid-column: 1/4;
+   grid-row: 3;
 }

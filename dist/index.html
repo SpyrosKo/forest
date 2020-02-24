@@ -76,59 +76,74 @@
   </header>
 
   <main id="main">
-    <div id="about">
-      <h2>About this Park</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum
-        tellus a erat condimentum, at ullamcorper leo interdum. Morbi porta,
-        mi eget rutrum fermentum, leo eros rhoncus turpis, in posuere massa
-        ligula efficitur turpis.
-      </p>
-      <p>
-        Hyphenation rules are language-specific. In HTML, the language is
-        determined by the lang attribute, and browsers will hyphenate only
-        ifffasasasas this attribute is present and if an appropriate
-        hyphenation dictionary is available. In XML, the xml:lang attribute
-        must be used.
-      </p>
-      <figure>
-        <blockquote>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        </blockquote>
-        <p>-- Some Very Cool Mag</p>
-      </figure>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum
-        tellus a erat condimentum, at ullamcorper leo interdum. Morbi porta,
-        mi eget rutrum fermentum, leo eros rhoncus turpis, in posuere massa
-        ligula efficitur turpis.
-      </p>
-    </div>
 
-    <div id="member-cta">
-      <p>
-        Help us keep
-        <br />
-        our forests clean
-      </p>
-      <button class="member-btn btn">
-        <a href="#">Become a member</a>
-      </button>
-    </div>
+    <div class="top-grid">
+      <div class="about">
+        <h2 class="about__header">About this Park</h2>
+        <p class="about__paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum
+          tellus a erat condimentum, at ullamcorper leo interdum. Morbi porta,
+          mi eget rutrum fermentum, leo eros rhoncus turpis, in posuere massa
+          ligula efficitur turpis.
+        </p>
+        <p class="about__paragraph">
+          Hyphenation rules are language-specific. In HTML, the language is
+          determined by the lang attribute, and browsers will hyphenate only
+          ifffasasasas this attribute is present and if an appropriate
+          hyphenation dictionary is available. In XML, the xml:lang attribute
+          must be used.
+        </p>
+        <figure class="about__figure">
+          <blockquote class="about__blockquote">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          </blockquote>
+          <cite class="about__cite">-- Some Very Cool Mag</cite>
+        </figure>
+        <p class="about__paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum
+          tellus a erat condimentum, at ullamcorper leo interdum. Morbi porta,
+          mi eget rutrum fermentum, leo eros rhoncus turpis, in posuere massa
+          ligula efficitur turpis.
+        </p>
+      </div>
 
-    <div id="further-info">
-      <h2>At a glance</h2>
-      <ul>
-        <li>Founded: <span>1901</span></li>
-        <li>Staff: <span>2</span></li>
-        <li>Founder: <span>Jolie Ko</span></li>
-        <li>Office HQ: <span>Landover, Washington</span></li>
-        <li>
-          Ultimate Vision:
-          <span>To revitalize the woodlands and restore balance to the
-            world.</span>
-        </li>
-      </ul>
+      <div class="member">
+        <p class="member__paragraph">
+          Help us keep
+          <br />
+          our forests clean
+        </p>
+        <button class="member__button">
+          <a class="member__cta" href="#">
+            Become a member
+          </a>
+        </button>
+      </div>
+
+      <div class="nonprofit">
+        <h2 class="nonprofit__heading">
+          At a glance
+        </h2>
+        <ul class="nonprofit__container">
+          <li class="nonprofit__list">
+            Founded: <span class="nonprofit__span">1901</span>
+          </li>
+          <li class="nonprofit__list">
+            Staff: <span class="nonprofit__span">2</span>
+          </li>
+          <li class="nonprofit__list">
+            Founder: <span class="nonprofit__span">Jolie Ko</span>
+          </li>
+          <li class="nonprofit__list">
+            Office HQ: <span class="nonprofit__span">Landover, Washington</span>
+          </li>
+          <li class="nonprofit__list">
+            Ultimate Vision:
+            <span class="nonprofit__span">To revitalize the woodlands and restore balance to the
+              world.</span>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div id="revitalization-project">

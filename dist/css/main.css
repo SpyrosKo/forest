@@ -89,6 +89,16 @@ img {
   height: auto;
 }
 
+h2 {
+  font-size: 2rem;
+  padding: 1.5rem 0;
+}
+
+p {
+  line-height: 1.5rem;
+  padding: 1rem 0;
+}
+
 .header {
   background: url("../images/bridge-under-white-clouds.jpg") center;
   background-size: cover;
@@ -96,8 +106,9 @@ img {
 }
 
 .hero {
-  padding-left: 10rem;
-  padding-top: 5rem;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 3rem;
   width: 100%;
   max-width: 900px;
 }
@@ -135,5 +146,59 @@ img {
   font-weight: bold;
   outline: none;
   outline-style: none;
+}
+
+.top-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  padding: 0 10vw;
+  padding-top: 8rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+.about {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+.about__figure {
+  color: #032200;
+  font-size: 1.5rem;
+  width: 70vw;
+}
+
+.about__blockquote {
+  color: #032200;
+  font-weight: bold;
+  line-height: 2.2rem;
+  padding: 0.1rem 0;
+}
+
+.about__cite {
+  color: #085500;
+  font-size: 1.2rem;
+  font-weight: thin;
+}
+
+.member {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  padding: 5rem;
+  text-align: center;
+}
+
+.nonprofit {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 3;
+  grid-row: 3;
 }
 /*# sourceMappingURL=main.css.map */

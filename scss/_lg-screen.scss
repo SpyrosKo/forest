@@ -19,7 +19,7 @@ p {
 .hero {
    padding-left: 10vw;
    padding-right: 10vw;
-   padding-top: 3rem;
+   padding-top: 8rem;
    width: 100%;
    max-width: 900px;
 
@@ -37,13 +37,9 @@ p {
    }
 
    &__button {
+      @extend button;
       background-color: #ffc107;
-      border-width: 0;
-      border-radius: 25px;
-      font-size: 1.5rem;
       margin: 2rem 0;
-      padding: 1.2rem;
-      text-transform: uppercase;
 
       &:focus {
          outline: none;
@@ -54,8 +50,10 @@ p {
       color: #003302;
       cursor: pointer;
       font-weight: bold;
+      font-size: 1.5rem;
       outline: none;
       outline-style: none;
+      padding: 1.2rem;
    }
 }
 
@@ -65,40 +63,182 @@ p {
    padding: 0 10vw;
    padding-top: 8rem;
    width: 100%;
-   max-width: 900px;
+   max-width: 1500px;
 }
 
 .about {
    grid-column: 1/4;
+   grid-row: 1;
+
+   &__header {
+      font-size: 2.3rem;
+   }
+
+   &__paragraph {
+      font-size: 1.3rem;
+      line-height: 2.2rem;
+   }
 
    &__figure {
       color: $font-color;
       font-size: 1.5rem;
-      width: 70vw;
+      padding: 3rem;
+      width: 60vw;
    }
 
    &__blockquote {
-      color: $font-color;
+      color: lighten($font-color, 15%);
       font-weight: bold;
       line-height: 2.2rem;
       padding: 0.1rem 0;
    }
 
    &__cite {
-      color: lighten($font-color, 10%);
+      color: lighten($font-color, 5%);
       font-size: 1.2rem;
-      font-weight: thin;
    }
 }
 
 .member {
    grid-column: 1/4;
    grid-row: 2;
-   padding: 5rem;
+   padding-top: 8rem;
    text-align: center;
+
+   &__paragraph {
+      color: $font-color;
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: 2.5rem;
+      text-transform: uppercase;
+   }
+
+   &__button {
+      background-color: #0a5b00;
+   }
+
+   &__cta {
+      color: #ffffff;
+      font-size: 1.3rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      padding: 1.2rem;
+   }
 }
 
 .nonprofit {
    grid-column: 1/4;
    grid-row: 3;
+   padding-bottom: 8rem;
+
+   &__heading {
+      text-align: center;
+   }
+
+   &__container {
+      text-align: center;
+      font-size: 1.2rem;
+
+      span {
+         font-weight: normal;
+      }
+   }
+
+   &__list {
+      font-weight: bold;
+      line-height: 2rem;
+   }
+}
+
+.photos {
+   background-color: lighten($font-color, 92.5%);
+   padding: 13rem 2rem;
+   padding-top: 2rem;
+
+   &__headers {
+      text-align: center;
+      padding: 5rem 0;
+   }
+
+   &__header {
+      font-size: 2.3rem;
+   }
+
+   &__paragraph {
+      font-size: 1.3rem;
+      line-height: 2.2rem;
+   }
+
+   &__grid {
+      display: grid;
+      grid-gap: 3rem;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-row: wrap;
+   }
+
+   &__figure {
+      text-align: center;
+   }
+
+   &__caption {}
+}
+
+.footer {
+   background-color: lighten($botticelli, 10%);
+   background-color: #00141e;
+   background-color: #002e0b;
+
+
+   &__container {
+      margin: auto;
+      max-width: 1000px;
+      width: 100%;
+   }
+
+   &__sitemap {
+      display: grid;
+      grid-gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-row: wrap;
+      justify-self: center;
+      padding-bottom: 7rem;
+      padding-top: 5rem;
+   }
+
+   &__column {
+      justify-self: center;
+   }
+
+   &__header {
+      color: $font-color;
+      color: #f5fff3;
+      font-size: 1.9rem;
+      padding: 2rem 0;
+   }
+
+   &__ul {}
+
+   &__list {
+      font-size: 1.3rem;
+      padding: 0.5rem 0;
+      text-align: center;
+
+      a {
+         color: darken($font-color, 10%);
+         color: #e7f8ef;
+      }
+   }
+
+   &__bar {
+      align-items: center;
+      background-color: lighten($font-color, 90%);
+      display: flex;
+      justify-content: space-around;
+      padding: 0.5rem 0;
+   }
+
+   &__icon {
+      width: 2rem;
+      height: 2rem;
+   }
 }

@@ -31,9 +31,10 @@
   </div>
 
   <nav class="navigation">
-    <div class="navigation__logo">
+
+    <a class="navigation__logo" href="#">
       LOGO
-    </div>
+    </a>
     <ul class="navigation__container">
       <li class="navigation__list">
         <a class="navigation__link" href="#">
@@ -56,8 +57,9 @@
         </a>
       </li>
     </ul>
-    <button class="navigation__signin">
-      <a href="#">
+
+    <button class="navigation__welcome">
+      <a class="navigation__signin" href="#">
         Sign In
       </a>
     </button>
@@ -80,9 +82,33 @@
     </div>
   </header>
 
-  <main id="main">
+  <main class="main">
 
     <div class="top-grid">
+      <div class="nonprofit">
+        <h2 class="nonprofit__heading">
+          At a glance
+        </h2>
+        <ul class="nonprofit__container">
+          <li class="nonprofit__list">
+            Founded: <span class="nonprofit__span">1901</span>
+          </li>
+          <li class="nonprofit__list">
+            Staff: <span class="nonprofit__span">2</span>
+          </li>
+          <li class="nonprofit__list">
+            Founder: <span class="nonprofit__span">Jolie Ko</span>
+          </li>
+          <li class="nonprofit__list">
+            Office HQ: <span class="nonprofit__span">Landover, Washington</span>
+          </li>
+          <li class="nonprofit__list">
+            Ultimate Vision:
+            <span class="nonprofit__span">To revitalize the woodlands.</span>
+          </li>
+        </ul>
+      </div>
+
       <div class="about">
         <h2 class="about__header">About this Park</h2>
         <p class="about__paragraph">
@@ -111,79 +137,82 @@
           ligula efficitur turpis.
         </p>
       </div>
-
-      <div class="member">
-        <p class="member__paragraph">
-          Help us keep
-          <br />
-          our forests clean!
-        </p>
-        <button class="member__button">
-          <a class="member__cta" href="#">
-            Become a member
-          </a>
-        </button>
-      </div>
-
-      <div class="nonprofit">
-        <h2 class="nonprofit__heading">
-          At a glance
-        </h2>
-        <ul class="nonprofit__container">
-          <li class="nonprofit__list">
-            Founded: <span class="nonprofit__span">1901</span>
-          </li>
-          <li class="nonprofit__list">
-            Staff: <span class="nonprofit__span">2</span>
-          </li>
-          <li class="nonprofit__list">
-            Founder: <span class="nonprofit__span">Jolie Ko</span>
-          </li>
-          <li class="nonprofit__list">
-            Office HQ: <span class="nonprofit__span">Landover, Washington</span>
-          </li>
-          <li class="nonprofit__list">
-            Ultimate Vision:
-            <span class="nonprofit__span">To revitalize the woodlands.</span>
-          </li>
-        </ul>
-      </div>
     </div>
 
-
-
-    <div class="photos">
-      <section class="photos__headers">
-        <h2 class="photos__header">Photography</h2>
-        <p class="photos__paragraph">
-          Sed fermentum tellus a erat condimentum, at ullamcorper leo
-          interdum.
-        </p>
-      </section>
-
-      <div class="photos__grid">
-        <figure class="photos__figure">
-          <a class="photos__link" href="https://www.pinterest.com/bmsmjmcgrat/worms-eye-view-trees/">
-            <img class="photos__image" src="images/forest-wormview-500x500-ToddTrapani.jpg" alt="Forest in mist" />
-          </a>
-          <figcaption class="photos__figcaption">Forest in worm eye view</figcaption>
-        </figure>
-        <figure class="photos__figure">
-          <a class="photos__link" href="https://swtbook.wordpress.com/2014/07/12/little-elephant/">
-            <img class="photos__image" src="images/animal-elephant-500x500-Pixabay.jpg" alt="Elephant in the forest" />
-          </a>
-          <figcaption class="photos__figcaption">Elephant in the Forest</figcaption>
-        </figure>
-        <figure class="photos__figure">
-          <a class="photos__link"
-            href="https://www.videoblocks.com/video/group-of-people-are-sitting-next-to-a-campfire-next-to-a-tent-in-an-autumn-forest-r1gkm69imxs9rr8">
-            <img class="photos__image" src="images/bonfire-burning-camping-500x500-EmreKuzu.jpg"
-              alt="Man near a bonfire" />
-          </a>
-          <figcaption class="photos__figcaption">Campfire in a forest</figcaption>
-        </figure>
-      </div>
+    <div class="member">
+      <p class="member__paragraph">
+        Help us keep
+        <br />
+        our forests clean!
+      </p>
+      <button class="member__button">
+        <a class="member__cta" href="#">
+          Become a member
+        </a>
+      </button>
     </div>
+
+    <div class="photos__container">
+
+      <div class="photos">
+        <section class="photos__headers">
+          <h2 class="photos__header">Photography</h2>
+          <p class="photos__paragraph">
+            These are some of the most popular spots in the park.
+          </p>
+        </section>
+
+        <div class="photos__grid">
+
+          <figure class="photos__figure">
+            <a class="photos__link" href="https://www.pinterest.com/bmsmjmcgrat/worms-eye-view-trees/">
+              <img class="photos__image" src="images/forest-wormview-500x500-ToddTrapani.jpg" alt="Forest in mist" />
+            </a>
+            <figcaption class="photos__figcaption">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorem quod nesciunt nostrum earum
+                quasi? Repellat voluptates quae est dolore sequi aut, blanditiis maiores facilis provident doloribus
+                esse
+                quaerat magni dolorem!
+              </p>
+            </figcaption>
+          </figure>
+
+          <figure class="photos__figure">
+            <figcaption class="photos__figcaption">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorem quod nesciunt nostrum earum
+                quasi? Repellat
+                voluptates quae est dolore sequi aut, blanditiis maiores facilis provident doloribus esse quaerat magni
+                dolorem!
+              </p>
+            </figcaption>
+            <a class="photos__link" href="https://swtbook.wordpress.com/2014/07/12/little-elephant/">
+              <img class="photos__image" src="images/animal-elephant-500x500-Pixabay.jpg"
+                alt="Elephant in the forest" />
+            </a>
+          </figure>
+
+          <div class="figure__container">
+            <figure class="photos__figure">
+              <a class="photos__link a1"
+                href="https://www.videoblocks.com/video/group-of-people-are-sitting-next-to-a-campfire-next-to-a-tent-in-an-autumn-forest-r1gkm69imxs9rr8">
+                <img class="photos__image a1" src="images/bonfire-burning-camping-500x500-EmreKuzu.jpg"
+                  alt="Man near a bonfire" />
+              </a>
+              <figcaption class="photos__figcaption a2">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorem quod nesciunt nostrum earum
+                  quasi? Repellat
+                  voluptates quae est dolore sequi aut, blanditiis maiores facilis provident doloribus esse quaerat
+                  magni
+                  dolorem!
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
   </main>
 
   <!-- FOOTER  -->

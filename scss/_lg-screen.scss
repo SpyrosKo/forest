@@ -1,283 +1,288 @@
-body {}
+@include mediaLg {
 
-h2 {
-   font-size: 2rem;
-   padding: 1.5rem 0;
-}
-
-p {
-   line-height: 1.5rem;
-   padding: 1rem 0;
-}
-
-.header {
-   background: url('../images/bridge-under-white-clouds.jpg') center;
-   background-size: cover;
-   height: 120vh;
-}
-
-.hero {
-   display: grid;
-   grid-template-columns: 10rem 1fr 10vw;
-   padding-top: 10rem;
-   width: 100%;
-
-   &__heading {
-      color: darken($font-color, 2%);
-      font-size: 4rem;
-      grid-column: 2;
-      line-height: 75px;
-      text-transform: uppercase;
-   }
-
-   &__subheading {
-      color: darken($font-color, 2%);
+   h2 {
       font-size: 2rem;
-      grid-column: 2;
-      line-height: 52px;
+      padding: 1.5rem 0;
+   }
+
+   p {
+      line-height: 1.5rem;
       padding: 1rem 0;
    }
 
-   &__button {
-      @extend button;
-      background-color: #ffc107;
-      grid-column: 2;
-      margin: 2rem 0;
-      width: fit-content;
+   .header {
+      background: url('../images/bridge-under-white-clouds.jpg') center;
+      background-size: cover;
+      height: 120vh;
+   }
 
-      &:focus {
+   .hero {
+      display: grid;
+      grid-template-columns: 10rem 1fr 10vw;
+      padding-top: 10rem;
+      width: 100%;
+
+      &__heading {
+         color: darken($font-color, 2%);
+         font-size: 4rem;
+         grid-column: 2;
+         line-height: 75px;
+         text-transform: uppercase;
+      }
+
+      &__subheading {
+         color: darken($font-color, 2%);
+         font-size: 2rem;
+         grid-column: 2;
+         line-height: 52px;
+         padding: 1rem 0;
+      }
+
+      &__button {
+         border-width: 0;
+         border-radius: 25px;
+         padding: 1.2rem;
+         text-transform: uppercase;
+         background-color: #ffc107;
+         grid-column: 2;
+         margin: 2rem 0;
+         width: fit-content;
+
+         &:focus {
+            outline: none;
+         }
+      }
+
+      &__cta {
+         color: #003302;
+         cursor: pointer;
+         font-weight: bold;
+         font-size: 1.5rem;
          outline: none;
+         outline-style: none;
+         padding: 1.2rem;
       }
    }
 
-   &__cta {
-      color: #003302;
-      cursor: pointer;
-      font-weight: bold;
-      font-size: 1.5rem;
-      outline: none;
-      outline-style: none;
-      padding: 1.2rem;
-   }
-}
-
-.top-grid {
-   display: grid;
-   grid-template-columns: 10rem 1fr 30vw;
-   text-align: left;
-   width: 100%;
-}
-
-.nonprofit {
-   background-color: lighten($botticelli, 10%);
-   grid-column: 2/3;
-   grid-row: 1.5;
-   padding-bottom: 1.5rem;
-   padding-top: 1.5rem;
-   padding-left: 1rem;
-
-   &__heading {}
-
-   &__container {
-      font-size: 1.2rem;
-
-      span {
-         font-weight: normal;
-      }
-   }
-
-   &__list {
-      font-weight: bold;
-      line-height: 2rem;
-   }
-}
-
-.about {
-   grid-column: 2;
-   padding-bottom: 10rem;
-   padding-top: 5rem;
-
-   &__header {
-      font-size: 2.3rem;
-   }
-
-   &__paragraph {
-      font-size: 1.3rem;
-      line-height: 2.2rem;
-   }
-
-   &__figure {
-      color: $font-color;
-      font-size: 1.5rem;
-      padding: 3rem;
-      width: 60vw;
-   }
-
-   &__blockquote {
-      color: lighten($font-color, 15%);
-      font-weight: bold;
-      line-height: 2.2rem;
-      padding: 0.1rem 0;
-   }
-
-   &__cite {
-      color: lighten($font-color, 5%);
-      font-size: 1.2rem;
-   }
-}
-
-.member {
-   // grid-column: 2;
-   // padding-top: 4rem;
-   background-color: $botticelli;
-   padding-bottom: 6rem;
-   padding-top: 5rem;
-   text-align: center;
-
-   &__paragraph {
-      color: $font-color;
-      font-size: 1.5rem;
-      font-weight: bold;
-      line-height: 2.5rem;
-      text-transform: uppercase;
-   }
-
-   &__button {
-      background-color: #0a5b00;
-   }
-
-   &__cta {
-      color: #ffffff;
-      font-size: 1.3rem;
-      font-weight: bold;
-      letter-spacing: 2px;
-      padding: 1.2rem;
-   }
-}
-
-.photos__container {
-   max-width: 700px;
-   margin: auto;
-}
-
-.photos {
-   background-color: lighten($font-color, 92.5%);
-   // padding-top: 2rem;
-   padding: 5rem 0;
-
-   img {
-      display: block;
-      height: auto;
-      width: 100%;
-      // min-width: 400px;
-   }
-
-   &__headers {
-      text-align: center;
-      padding-bottom: 4rem;
-   }
-
-   &__header {
-      font-size: 2.3rem;
-   }
-
-   &__paragraph {
-      font-size: 1.3rem;
-      line-height: 2.2rem;
-   }
-
-   // Image grid
-   &__grid {
+   .top-grid {
       display: grid;
-      grid-gap: 5rem;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-   }
-
-   img {
-      display: block;
-      height: auto;
+      grid-template-columns: 10rem 1fr 30vw;
+      text-align: left;
       width: 100%;
    }
 
-   &__figure {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-   }
+   .nonprofit {
+      background-color: lighten($botticelli, 10%);
+      grid-column: 2/3;
+      grid-row: 1.5;
+      padding-bottom: 1.5rem;
+      padding-top: 1.5rem;
+      padding-left: 1rem;
 
-   &__image {
-      max-width: 350px;
-   }
+      &__heading {}
 
-   &__figcaption {
-      display: block;
-      max-width: 300px;
-      align-self: center;
+      &__container {
+         font-size: 1.2rem;
 
-      p {
-         box-shadow:
-            1px 1px 1px 0px #e0dfdf,
-            inset 1px 1px 0px 1px #a5a5a5;
-         margin-top: 1rem;
-         padding-left: 2rem;
-         line-height: 1.8rem;
+         span {
+            font-weight: normal;
+         }
+      }
+
+      &__list {
+         font-weight: bold;
+         line-height: 2rem;
       }
    }
-}
 
-.footer {
-   background-color: lighten($botticelli, 10%);
-
-   &__container {
-      margin: auto;
-      max-width: 800px;
-      width: 100%;
-   }
-
-   &__sitemap {
-      display: grid;
-      grid-gap: 1.5rem;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      justify-self: center;
-      padding-bottom: 5rem;
+   .about {
+      grid-column: 2;
+      padding-bottom: 7rem;
       padding-top: 5rem;
+
+      &__header {
+         font-size: 2.3rem;
+      }
+
+      &__paragraph {
+         font-size: 1.3rem;
+         line-height: 2.2rem;
+      }
+
+      &__figure {
+         color: $font-color;
+         font-size: 1.5rem;
+         padding: 3rem;
+         width: 60vw;
+      }
+
+      &__blockquote {
+         color: lighten($font-color, 15%);
+         font-weight: bold;
+         line-height: 2.2rem;
+         padding: 0.1rem 0;
+      }
+
+      &__cite {
+         color: lighten($font-color, 5%);
+         font-size: 1.2rem;
+      }
    }
 
-   &__column {
-      justify-self: center;
-   }
-
-   &__header {
-      color: $font-color;
-      font-size: 1.5rem;
-      padding: 1rem 0;
-   }
-
-   &__list {
-      font-size: 1rem;
-      padding: 0.5rem 0;
+   .member {
+      background-color: $botticelli;
+      padding-bottom: 3rem;
+      padding-top: 1rem;
       text-align: center;
 
-      a {
-         color: darken($font-color, 10%);
+      &__paragraph {
+         color: $font-color;
+         font-size: 1.5rem;
+         font-weight: bold;
+         line-height: 2.5rem;
+         text-transform: uppercase;
+      }
+
+      &__button {
+         background-color: #0a5b00;
+      }
+
+      &__cta {
+         color: #ffffff;
+         font-size: 1.3rem;
+         font-weight: bold;
+         letter-spacing: 2px;
+         padding: 1.2rem;
       }
    }
 
-   &__bar {
-      align-items: center;
-      background-color: darken($botticelli, 90%);
-      display: flex;
-      justify-content: space-around;
+   .photos__container {
+      max-width: 700px;
+      margin: auto;
+   }
 
-      p {
-         color: #fff;
-         font-size: .9rem;
+   .photos {
+      background-color: lighten($font-color, 92.5%);
+      padding: 5rem 0;
+
+      img {
+         display: block;
+         height: auto;
+         width: 100%;
+      }
+
+      &__headers {
+         text-align: center;
+         padding-bottom: 4rem;
+      }
+
+      &__header {
+         font-size: 2.3rem;
+         padding: 0;
+      }
+
+      &__paragraph {
+         font-size: 1.3rem;
+         line-height: 2.2rem;
+         padding: 0;
+         padding-bottom: 3rem;
+      }
+
+      // Image grid
+      &__grid {
+         display: grid;
+         grid-gap: 5rem;
+         grid-template-columns: 1fr;
+         grid-template-rows: auto;
+      }
+
+      img {
+         display: block;
+         height: auto;
+         width: 100%;
+      }
+
+      &__figure {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-evenly;
+      }
+
+      &__image {
+         max-width: 400px;
+         padding: 0 1rem;
+      }
+
+      &__figcaption {
+         display: block;
+         max-width: 300px;
+         align-self: center;
+
+         p {
+            box-shadow:
+               1px 1px 1px 0px #e0dfdf,
+               inset 1px 1px 0px 1px #a5a5a5;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            padding-left: 2rem;
+            line-height: 1.8rem;
+         }
       }
    }
 
-   &__icon {
-      width: 1.2rem;
-      height: 1.2rem;
+   .footer {
+      background-color: lighten($botticelli, 10%);
+
+      &__container {
+         margin: auto;
+         max-width: 800px;
+         width: 100%;
+      }
+
+      &__sitemap {
+         display: grid;
+         grid-gap: 1.5rem;
+         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+         justify-self: center;
+         padding-bottom: 5rem;
+         padding-top: 5rem;
+      }
+
+      &__column {
+         justify-self: center;
+      }
+
+      &__header {
+         color: $font-color;
+         font-size: 1.5rem;
+         padding: 1rem 0;
+      }
+
+      &__list {
+         font-size: 1rem;
+         padding: 0.5rem 0;
+         text-align: center;
+
+         a {
+            color: darken($font-color, 10%);
+         }
+      }
+
+      &__bar {
+         align-items: center;
+         background-color: darken($botticelli, 90%);
+         display: flex;
+         justify-content: space-around;
+
+         p {
+            color: #fff;
+            font-size: .9rem;
+         }
+      }
+
+      &__icon {
+         width: 1.2rem;
+         height: 1.2rem;
+      }
    }
 }

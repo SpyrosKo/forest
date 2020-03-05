@@ -1,8 +1,5 @@
 $font-color: #032200;
-
 $botticelli: #CCE1E4;
-
-
 
 @font-face {
   font-family: Mont;
@@ -14,18 +11,6 @@ $botticelli: #CCE1E4;
   src: url(../dist/fonts/Montserrat/Montserrat-Regular.ttf)
 }
 
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
 @mixin mediaSm {
   @media only screen and (max-width:520px) {
     @content;
@@ -33,13 +18,13 @@ $botticelli: #CCE1E4;
 }
 
 @mixin mediaMd {
-  @media only screen and (max-width:900px) and (min-width: 521px) {
+  @media only screen and (max-width: 725px) and (min-width: 521px) {
     @content;
   }
 }
 
 @mixin mediaLg {
-  @media only screen and (min-width: 901px) {
+  @media only screen and (min-width: 726px) {
     @content;
   }
 }

@@ -1,6 +1,4 @@
 @include mediaMd {
-   body {}
-
    h2 {
       font-size: 2rem;
       padding: 1.5rem 0;
@@ -19,10 +17,9 @@
 
    .hero {
       display: grid;
-      grid-template-columns: 5rem auto 2rem;
+      grid-template-columns: 2rem auto 2rem;
       padding-top: 5rem;
       width: 100%;
-      max-width: 80vw;
 
       &__heading {
          color: darken($font-color, 2%);
@@ -43,7 +40,8 @@
       &__button {
          border-width: 0;
          border-radius: 25px;
-         padding: 1.2rem;
+         justify-self: center;
+         // padding: 1.2rem;
          text-transform: uppercase;
          background-color: #ffc107;
          grid-column: 2;
@@ -59,10 +57,9 @@
          color: #003302;
          cursor: pointer;
          font-weight: bold;
-         font-size: 1.5rem;
+         font-size: 1rem;
          outline: none;
          outline-style: none;
-         padding: 1.2rem;
       }
    }
 
@@ -239,7 +236,6 @@
 
       &__sitemap {
          display: grid;
-         grid-gap: 1.5rem;
          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
          justify-self: center;
          padding-bottom: 5rem;

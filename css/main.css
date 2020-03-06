@@ -26,10 +26,20 @@
 }
 
 .navigation__logo {
-  border: 1px solid #46b44f;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 1.5rem;
   -ms-grid-column: 2;
   grid-column: 2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation__logo span {
+  text-decoration: underline;
 }
 
 .navigation__container {
@@ -86,26 +96,28 @@
 }
 
 @media only screen and (max-width: 725px) and (min-width: 521px) {
+  #body .line-container .medium-toggle-color {
+    background-color: blue;
+  }
   .navigation {
     background-color: #444;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 15vw 1fr;
-        grid-template-columns: 15vw 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     -ms-grid-rows: 10vh;
         grid-template-rows: 10vh;
     height: 100vh;
     position: relative;
     -webkit-transform: translateY(-50rem);
             transform: translateY(-50rem);
-    -webkit-transition: 0.4s -webkit-transform;
-    transition: 0.4s -webkit-transform;
-    transition: 0.4s transform;
-    transition: 0.4s transform, 0.4s -webkit-transform;
+    -webkit-transition: 0.4s -webkit-transform ease-in-out;
+    transition: 0.4s -webkit-transform ease-in-out;
+    transition: 0.4s transform ease-in-out;
+    transition: 0.4s transform ease-in-out, 0.4s -webkit-transform ease-in-out;
     z-index: 1;
   }
   .navigation__logo {
-    border: 1px solid #46b44f;
     display: none;
     font-size: 1.5rem;
     -ms-grid-column: 1;
@@ -133,12 +145,13 @@
     position: relative;
   }
   .navigation__list {
-    margin: 2rem;
+    margin: 1.5rem;
+    margin: 2rem 0;
   }
   .navigation__link {
     margin-left: 0;
-    font-size: 1.8rem;
     color: #fff;
+    color: transparent;
   }
   .navigation__welcome {
     background-color: transparent;
@@ -195,17 +208,17 @@
     cursor: pointer;
   }
   .line:first-child {
-    background-color: black;
+    background-color: #222;
     height: 2px;
     position: absolute;
+    right: 25px;
     top: 20px;
-    right: 27px;
-    width: 15px;
+    width: 18px;
     z-index: 10;
   }
   .line:nth-child(2) {
-    background-color: #777;
-    height: 4px;
+    background-color: #333;
+    height: 2px;
     right: 20px;
     position: absolute;
     top: 30px;
@@ -213,17 +226,21 @@
     z-index: 10;
   }
   .line:nth-child(3) {
-    background-color: black;
+    background-color: #222;
     height: 2px;
-    right: 27px;
     position: absolute;
+    right: 25px;
     top: 40px;
-    width: 15px;
+    width: 18px;
     z-index: 10;
   }
   #body .line-container .toggle-color {
     background-color: #fff;
     height: 2px;
+  }
+  .navigation__container .navigation__list .toggle-link-color {
+    color: #fff;
+    font-size: 1.5rem;
   }
   .burger-border {
     border: 1px solid #fff;
@@ -235,22 +252,21 @@
     background-color: #444;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 15vw 1fr;
-        grid-template-columns: 15vw 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     -ms-grid-rows: 10vh;
         grid-template-rows: 10vh;
     height: 100vh;
     position: relative;
     -webkit-transform: translateY(-50rem);
             transform: translateY(-50rem);
-    -webkit-transition: 0.4s -webkit-transform;
-    transition: 0.4s -webkit-transform;
-    transition: 0.4s transform;
-    transition: 0.4s transform, 0.4s -webkit-transform;
+    -webkit-transition: 0.4s -webkit-transform ease-in-out;
+    transition: 0.4s -webkit-transform ease-in-out;
+    transition: 0.4s transform ease-in-out;
+    transition: 0.4s transform ease-in-out, 0.4s -webkit-transform ease-in-out;
     z-index: 1;
   }
   .navigation__logo {
-    border: 1px solid #46b44f;
     display: none;
     font-size: 1.5rem;
     -ms-grid-column: 1;
@@ -284,6 +300,7 @@
     margin-left: 0;
     font-size: 1.8rem;
     color: #fff;
+    color: transparent;
   }
   .navigation__welcome {
     background-color: transparent;
@@ -340,17 +357,17 @@
     cursor: pointer;
   }
   .line:first-child {
-    background-color: black;
+    background-color: #efefef;
     height: 2px;
     position: absolute;
+    right: 25px;
     top: 20px;
-    right: 27px;
-    width: 15px;
+    width: 18px;
     z-index: 10;
   }
   .line:nth-child(2) {
-    background-color: #777;
-    height: 4px;
+    background-color: #dfdede;
+    height: 2px;
     right: 20px;
     position: absolute;
     top: 30px;
@@ -358,17 +375,21 @@
     z-index: 10;
   }
   .line:nth-child(3) {
-    background-color: black;
+    background-color: whitesmoke;
     height: 2px;
-    right: 27px;
     position: absolute;
+    right: 25px;
     top: 40px;
-    width: 15px;
+    width: 18px;
     z-index: 10;
   }
   #body .line-container .toggle-color {
     background-color: #fff;
     height: 2px;
+  }
+  .navigation__container .navigation__list .toggle-link-color {
+    color: #fff;
+    font-size: 2rem;
   }
   .burger-border {
     border: 1px solid #fff;
@@ -392,8 +413,20 @@ a {
 }
 
 a:hover {
-  -webkit-transition: color .05s;
-  transition: color .05s;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+}
+
+.active {
+  font-weight: bold;
+  color: #350000;
+  text-decoration: none;
+}
+
+.navigation__signin {
+  border-color: green;
+  color: green;
+  font-weight: bold;
 }
 
 img {
@@ -406,6 +439,11 @@ button {
   border-radius: 25px;
   padding: 1.2rem;
   text-transform: uppercase;
+}
+
+.navigation__link:hover {
+  color: #000;
+  text-decoration: underline;
 }
 
 .photos__figcaption {
@@ -453,33 +491,35 @@ button {
   .header {
     background: url("../images/bridge-under-white-clouds.jpg") center;
     background-size: cover;
-    height: 100vh;
+    background-position: center;
+    height: 120vh;
   }
   .hero {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 2rem auto 2rem;
-        grid-template-columns: 2rem auto 2rem;
-    padding-top: 5rem;
+    -ms-grid-columns: 15vw auto 15vw;
+        grid-template-columns: 15vw auto 15vw;
+    padding-top: 7rem;
     width: 100%;
   }
   .hero__heading {
     color: #021800;
-    font-size: 3rem;
+    font-size: 2.8rem;
     -ms-grid-column: 2;
-    grid-column: 2;
-    line-height: 3.5rem;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    line-height: 3.8rem;
     text-transform: uppercase;
   }
   .hero__subheading {
     color: #021800;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     -ms-grid-column: 2;
     grid-column: 2;
-    line-height: 2rem;
-    padding: 1rem 0;
+    line-height: 2.3rem;
+    padding: 1.5rem 0;
   }
-  .hero__button {
+  .hero button.hero__button {
     border-width: 0;
     border-radius: 25px;
     -ms-grid-column-align: center;
@@ -488,18 +528,19 @@ button {
     background-color: #ffc107;
     -ms-grid-column: 2;
     grid-column: 2;
-    margin: 3.5rem 0;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    margin: 2.5rem 0;
+    padding: 1rem 1rem;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
   }
-  .hero__button:focus {
+  .hero button.hero__button:focus {
     outline: none;
   }
   .hero__cta {
-    color: #003302;
+    color: #222;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 1rem;
     outline: none;
     outline-style: none;
@@ -507,8 +548,8 @@ button {
   .top-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 3rem auto 3rem;
-        grid-template-columns: 3rem auto 3rem;
+    -ms-grid-columns: 5vw auto 5vw;
+        grid-template-columns: 5vw auto 5vw;
     text-align: left;
     width: 100%;
   }
@@ -517,21 +558,17 @@ button {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
-    -ms-grid-row: 1;
-    grid-row: 1.5;
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
-    padding-left: 1rem;
+    padding: 0 0.5rem;
   }
   .nonprofit__container {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .nonprofit__container span {
     font-weight: normal;
   }
   .nonprofit__list {
     font-weight: bold;
-    line-height: 2rem;
+    line-height: 1.8rem;
   }
   .about {
     -ms-grid-column: 2;
@@ -541,37 +578,37 @@ button {
     padding-top: 5rem;
   }
   .about__header {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
   }
   .about__paragraph {
-    font-size: 1.1rem;
-    line-height: 1.9rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #333;
   }
   .about__figure {
     color: #032200;
     font-size: 1.5rem;
-    padding: 3rem;
-    width: 80vw;
+    padding: 2rem 1rem;
   }
   .about__blockquote {
-    color: #0a6f00;
+    color: #0c8800;
     font-weight: bold;
     line-height: 2.2rem;
     padding: 0.1rem 0;
   }
   .about__cite {
-    color: #053c00;
-    font-size: 1.2rem;
+    color: #085500;
+    font-size: 1rem;
   }
   .member {
     background-color: #CCE1E4;
-    padding-bottom: 6rem;
-    padding-top: 5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
     text-align: center;
   }
   .member__paragraph {
     color: #032200;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     line-height: 2.5rem;
     text-transform: uppercase;
@@ -581,13 +618,12 @@ button {
   }
   .member__cta {
     color: #ffffff;
-    font-size: 1.3rem;
-    font-weight: bold;
+    font-size: 1.1rem;
+    font-weight: normal;
     letter-spacing: 2px;
-    padding: 1.2rem;
   }
   .photos__container {
-    max-width: 800px;
+    max-width: 700px;
     margin: auto;
   }
   .photos {
@@ -602,14 +638,16 @@ button {
   }
   .photos__headers {
     text-align: center;
-    padding-bottom: 2rem;
+    color: #333;
+    padding-top: 1.5rem;
   }
   .photos__header {
     font-size: 2.3rem;
+    padding: 0.5rem 0;
   }
   .photos__paragraph {
     font-size: 1.1rem;
-    line-height: 2.2rem;
+    line-height: 1.9rem;
   }
   .photos__grid {
     display: -ms-grid;
@@ -645,9 +683,13 @@ button {
         -ms-grid-row-align: center;
         align-self: center;
   }
+  .photos__figcaption h3 {
+    padding: 0;
+  }
   .photos__figcaption p {
     margin-top: 1rem;
-    padding-left: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     line-height: 1.8rem;
   }
   .footer {
@@ -661,12 +703,12 @@ button {
   .footer__sitemap {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 1.2rem;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     -ms-grid-column-align: center;
         justify-self: center;
-    padding-bottom: 5rem;
-    padding-top: 5rem;
+    padding: 4rem 0;
   }
   .footer__column {
     -ms-grid-column-align: center;
@@ -675,11 +717,12 @@ button {
   .footer__header {
     color: #032200;
     font-size: 1.5rem;
-    padding: 1rem 0;
+    letter-spacing: px;
+    padding: 0.3rem 0;
   }
   .footer__list {
     font-size: 1rem;
-    padding: 0.5rem 0;
+    padding: 0.3rem 0;
     text-align: center;
   }
   .footer__list a {
@@ -729,7 +772,7 @@ button {
     background: url("../images/bridge-under-white-clouds.jpg") center;
     background-size: 40000%;
     background-position: center;
-    height: 100vh;
+    height: 120vh;
   }
   .hero {
     display: -ms-grid;
@@ -740,21 +783,21 @@ button {
     width: 100%;
   }
   .hero__heading {
-    color: #021800;
-    font-size: 2.5rem;
+    color: #efefef;
+    font-size: 2.8rem;
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
     grid-column: 2/4;
-    line-height: 3rem;
+    line-height: 3.8rem;
     text-transform: uppercase;
   }
   .hero__subheading {
-    color: #021800;
+    color: #dddddd;
     font-size: 1.3rem;
     -ms-grid-column: 2;
     grid-column: 2;
-    line-height: 1.8rem;
-    padding: 1rem 0;
+    line-height: 2.3rem;
+    padding: 1.5rem 0;
   }
   .hero button.hero__button {
     border-width: 0;
@@ -766,7 +809,7 @@ button {
     -ms-grid-column: 2;
     grid-column: 2;
     margin: 2.5rem 0;
-    padding: 0.5rem 0.5rem;
+    padding: 1rem 1rem;
     height: -webkit-min-content;
     height: -moz-min-content;
     height: min-content;
@@ -785,8 +828,8 @@ button {
   .top-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 15vw auto 3rem;
-        grid-template-columns: 15vw auto 3rem;
+    -ms-grid-columns: 5vw auto 5vw;
+        grid-template-columns: 5vw auto 5vw;
     text-align: left;
     width: 100%;
   }
@@ -795,22 +838,17 @@ button {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
-    -ms-grid-row: 1;
-    grid-row: 1.5;
-    margin-left: -1rem;
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
-    padding-left: 1rem;
+    padding: 0 0.5rem;
   }
   .nonprofit__container {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .nonprofit__container span {
     font-weight: normal;
   }
   .nonprofit__list {
     font-weight: bold;
-    line-height: 2rem;
+    line-height: 1.8rem;
   }
   .about {
     -ms-grid-column: 2;
@@ -820,36 +858,37 @@ button {
     padding-top: 5rem;
   }
   .about__header {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
   }
   .about__paragraph {
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 2rem;
+    color: #333;
   }
   .about__figure {
     color: #032200;
     font-size: 1.5rem;
-    padding: 3rem;
+    padding: 2rem 1rem;
   }
   .about__blockquote {
-    color: #0a6f00;
+    color: #0c8800;
     font-weight: bold;
     line-height: 2.2rem;
     padding: 0.1rem 0;
   }
   .about__cite {
-    color: #053c00;
-    font-size: 1.2rem;
+    color: #085500;
+    font-size: 1rem;
   }
   .member {
     background-color: #CCE1E4;
-    padding-bottom: 6rem;
-    padding-top: 5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
     text-align: center;
   }
   .member__paragraph {
     color: #032200;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     line-height: 2.5rem;
     text-transform: uppercase;
@@ -859,10 +898,9 @@ button {
   }
   .member__cta {
     color: #ffffff;
-    font-size: 1.3rem;
-    font-weight: bold;
+    font-size: 1.1rem;
+    font-weight: normal;
     letter-spacing: 2px;
-    padding: 1.2rem;
   }
   .photos__container {
     max-width: 700px;
@@ -880,14 +918,16 @@ button {
   }
   .photos__headers {
     text-align: center;
-    padding-bottom: 2rem;
+    color: #333;
+    padding-top: 1.5rem;
   }
   .photos__header {
     font-size: 2.3rem;
+    padding: 0.5rem 0;
   }
   .photos__paragraph {
     font-size: 1.1rem;
-    line-height: 2.2rem;
+    line-height: 1.9rem;
   }
   .photos__grid {
     display: -ms-grid;
@@ -923,9 +963,13 @@ button {
         -ms-grid-row-align: center;
         align-self: center;
   }
+  .photos__figcaption h3 {
+    padding: 0;
+  }
   .photos__figcaption p {
     margin-top: 1rem;
-    padding-left: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     line-height: 1.8rem;
   }
   .footer {
@@ -1012,9 +1056,9 @@ button {
   .hero {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 15vw 1fr 10vw;
-        grid-template-columns: 15vw 1fr 10vw;
-    padding-top: 10rem;
+    -ms-grid-columns: 15vw 1fr 15vw;
+        grid-template-columns: 15vw 1fr 15vw;
+    padding-top: 5rem;
     width: 100%;
   }
   .hero__heading {
@@ -1061,8 +1105,8 @@ button {
   .top-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 10rem 1fr 30vw;
-        grid-template-columns: 10rem 1fr 30vw;
+    -ms-grid-columns: 15vw 1fr 15vw;
+        grid-template-columns: 15vw 1fr 15vw;
     text-align: left;
     width: 100%;
   }
@@ -1097,8 +1141,8 @@ button {
     font-size: 2.3rem;
   }
   .about__paragraph {
-    font-size: 1.3rem;
-    line-height: 2.2rem;
+    font-size: 1.1rem;
+    line-height: 1.9rem;
   }
   .about__figure {
     color: #032200;

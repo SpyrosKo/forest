@@ -36,7 +36,6 @@
 
       &__subheading {
          color: darken($font-color, 2%);
-         // color: #dddddd;
          font-size: 1.3rem;
          grid-column: 2;
          line-height: 2.3rem;
@@ -243,10 +242,11 @@
 
       &__sitemap {
          display: grid;
-         grid-gap: 1.2rem;
-         grid-template-columns: 1fr;
+         grid-gap: 1.5rem;
+         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
          justify-self: center;
-         padding: 4rem 0;
+         padding-bottom: 5rem;
+         padding-top: 5rem;
       }
 
       &__column {

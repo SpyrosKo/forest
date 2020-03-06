@@ -703,12 +703,13 @@ button {
   .footer__sitemap {
     display: -ms-grid;
     display: grid;
-    grid-gap: 1.2rem;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+    -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     -ms-grid-column-align: center;
         justify-self: center;
-    padding: 4rem 0;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
   }
   .footer__column {
     -ms-grid-column-align: center;

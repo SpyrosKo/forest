@@ -18,8 +18,8 @@
 
    .hero {
       display: grid;
-      grid-template-columns: 15vw 1fr 10vw;
-      padding-top: 10rem;
+      grid-template-columns: 15vw 1fr 15vw;
+      padding-top: 5rem;
       width: 100%;
 
       &__heading {
@@ -66,7 +66,7 @@
 
    .top-grid {
       display: grid;
-      grid-template-columns: 10rem 1fr 30vw;
+      grid-template-columns: 15vw 1fr 15vw;
       text-align: left;
       width: 100%;
    }
@@ -105,8 +105,8 @@
       }
 
       &__paragraph {
-         font-size: 1.3rem;
-         line-height: 2.2rem;
+         font-size: 1.1rem;
+         line-height: 1.9rem;
       }
 
       &__figure {

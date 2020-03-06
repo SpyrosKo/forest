@@ -1,4 +1,7 @@
 @include mediaMd {
+
+   body {}
+
    h2 {
       font-size: 2rem;
       padding: 1.5rem 0;
@@ -12,41 +15,44 @@
    .header {
       background: url('../images/bridge-under-white-clouds.jpg') center;
       background-size: cover;
-      height: 100vh;
+      background-position: center;
+      height: 120vh;
    }
 
    .hero {
       display: grid;
-      grid-template-columns: 2rem auto 2rem;
-      padding-top: 5rem;
+      grid-template-columns: 15vw auto 15vw;
+      padding-top: 7rem;
       width: 100%;
 
       &__heading {
          color: darken($font-color, 2%);
-         font-size: 3rem;
-         grid-column: 2;
-         line-height: 3.5rem;
+         // color: #efefef;
+         font-size: 2.8rem;
+         grid-column: 2/4;
+         line-height: 3.8rem;
          text-transform: uppercase;
       }
 
       &__subheading {
          color: darken($font-color, 2%);
-         font-size: 1.5rem;
+         // color: #dddddd;
+         font-size: 1.3rem;
          grid-column: 2;
-         line-height: 2rem;
-         padding: 1rem 0;
+         line-height: 2.3rem;
+         padding: 1.5rem 0;
       }
 
-      &__button {
+      button.hero__button {
          border-width: 0;
          border-radius: 25px;
          justify-self: center;
-         // padding: 1.2rem;
          text-transform: uppercase;
          background-color: #ffc107;
          grid-column: 2;
-         margin: 3.5rem 0;
-         width: fit-content;
+         margin: 2.5rem 0;
+         padding: 1rem 1rem;
+         height: min-content;
 
          &:focus {
             outline: none;
@@ -54,9 +60,9 @@
       }
 
       &__cta {
-         color: #003302;
+         color: #222;
          cursor: pointer;
-         font-weight: bold;
+         font-weight: bolder;
          font-size: 1rem;
          outline: none;
          outline-style: none;
@@ -65,7 +71,7 @@
 
    .top-grid {
       display: grid;
-      grid-template-columns: 3rem auto 3rem;
+      grid-template-columns: 5vw auto 5vw;
       text-align: left;
       width: 100%;
    }
@@ -73,15 +79,12 @@
    .nonprofit {
       background-color: lighten($botticelli, 10%);
       grid-column: 2/3;
-      grid-row: 1.5;
-      padding-bottom: 1.5rem;
-      padding-top: 1.5rem;
-      padding-left: 1rem;
+      padding: 0 0.5rem;
 
       &__heading {}
 
       &__container {
-         font-size: 1.2rem;
+         font-size: 1rem;
 
          span {
             font-weight: normal;
@@ -90,7 +93,7 @@
 
       &__list {
          font-weight: bold;
-         line-height: 2rem;
+         line-height: 1.8rem;
       }
    }
 
@@ -100,45 +103,43 @@
       padding-top: 5rem;
 
       &__header {
-         font-size: 2.3rem;
+         font-size: 2.5rem;
       }
 
       &__paragraph {
-         font-size: 1.1rem;
-         line-height: 1.9rem;
+         font-size: 1rem;
+         line-height: 2rem;
+         color: #333;
       }
 
       &__figure {
          color: $font-color;
          font-size: 1.5rem;
-         padding: 3rem;
-         width: 80vw;
+         padding: 2rem 1rem;
       }
 
       &__blockquote {
-         color: lighten($font-color, 15%);
+         color: lighten($font-color, 20%);
          font-weight: bold;
          line-height: 2.2rem;
          padding: 0.1rem 0;
       }
 
       &__cite {
-         color: lighten($font-color, 5%);
-         font-size: 1.2rem;
+         color: lighten($font-color, 10%);
+         font-size: 1rem;
       }
    }
 
    .member {
-      // grid-column: 2;
-      // padding-top: 4rem;
       background-color: $botticelli;
-      padding-bottom: 6rem;
-      padding-top: 5rem;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
       text-align: center;
 
       &__paragraph {
          color: $font-color;
-         font-size: 1.5rem;
+         font-size: 1.3rem;
          font-weight: bold;
          line-height: 2.5rem;
          text-transform: uppercase;
@@ -150,15 +151,15 @@
 
       &__cta {
          color: #ffffff;
-         font-size: 1.3rem;
-         font-weight: bold;
+         font-size: 1.1rem;
+         font-weight: normal;
          letter-spacing: 2px;
-         padding: 1.2rem;
       }
    }
 
+
    .photos__container {
-      max-width: 800px;
+      max-width: 700px;
       margin: auto;
    }
 
@@ -175,19 +176,21 @@
 
       &__headers {
          text-align: center;
-         padding-bottom: 2rem;
+         color: #333;
+         padding-top: 1.5rem;
       }
 
       &__header {
          font-size: 2.3rem;
+         padding: 0.5rem 0;
       }
 
       &__paragraph {
          font-size: 1.1rem;
-         line-height: 2.2rem;
+         line-height: 1.9rem;
       }
 
-      // Image grid
+      // Gallery
       &__grid {
          display: grid;
          grid-gap: 5rem;
@@ -216,10 +219,14 @@
          max-width: 300px;
          align-self: center;
 
+         h3 {
+            padding: 0;
+         }
 
          p {
             margin-top: 1rem;
-            padding-left: 2rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
             line-height: 1.8rem;
          }
       }
@@ -236,10 +243,10 @@
 
       &__sitemap {
          display: grid;
-         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+         grid-gap: 1.2rem;
+         grid-template-columns: 1fr;
          justify-self: center;
-         padding-bottom: 5rem;
-         padding-top: 5rem;
+         padding: 4rem 0;
       }
 
       &__column {
@@ -249,12 +256,13 @@
       &__header {
          color: $font-color;
          font-size: 1.5rem;
-         padding: 1rem 0;
+         letter-spacing: px;
+         padding: 0.3rem 0;
       }
 
       &__list {
          font-size: 1rem;
-         padding: 0.5rem 0;
+         padding: 0.3rem 0;
          text-align: center;
 
          a {

@@ -19,9 +19,22 @@ a {
    text-decoration: none;
 
    &:hover {
-      transition: color .05s;
+      transition: color 0.1s;
    }
 }
+
+.active {
+   font-weight: bold;
+   color: rgb(53, 0, 0);
+   text-decoration: none;
+}
+
+.navigation__signin {
+   border-color: green;
+   color: green;
+   font-weight: bold;
+}
+
 
 img {
    width: 100%;
@@ -33,6 +46,11 @@ button {
    border-radius: 25px;
    padding: 1.2rem;
    text-transform: uppercase;
+}
+
+.navigation__link:hover {
+   color: #000;
+   text-decoration: underline;
 }
 
 .photos__figcaption {

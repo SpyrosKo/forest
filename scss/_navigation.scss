@@ -11,9 +11,15 @@
 
 
    &__logo {
-      border: 1px solid rgb(70, 180, 79);
+      color: black;
+      display: flex;
       font-size: 1.5rem;
       grid-column: 2;
+      align-items: center;
+
+      span {
+         text-decoration: underline;
+      }
    }
 
    &__container {
@@ -59,19 +65,23 @@
 }
 
 @include mediaMd {
+
+   #body .line-container .medium-toggle-color {
+      background-color: blue;
+   }
+
    .navigation {
       background-color: #444;
       display: grid;
-      grid-template-columns: 15vw 1fr;
+      grid-template-columns: 1fr;
       grid-template-rows: 10vh;
       height: 100vh;
       position: relative;
       transform: translateY(-50rem);
-      transition: 0.4s transform;
+      transition: 0.4s transform ease-in-out;
       z-index: 1;
 
       &__logo {
-         border: 1px solid rgb(70, 180, 79);
          display: none;
          font-size: 1.5rem;
          grid-column: 1;
@@ -89,13 +99,15 @@
       }
 
       &__list {
-         margin: 2rem;
+         margin: 1.5rem;
+         margin: 2rem 0;
       }
 
       &__link {
          margin-left: 0;
-         font-size: 1.8rem;
          color: #fff;
+         color: transparent;
+
       }
 
       &__welcome {
@@ -158,18 +170,18 @@
    }
 
    .line:first-child {
-      background-color: black;
+      background-color: #222;
       height: 2px;
       position: absolute;
+      right: 25px;
       top: 20px;
-      right: 27px;
-      width: 15px;
+      width: 18px;
       z-index: 10;
    }
 
    .line:nth-child(2) {
-      background-color: #777;
-      height: 4px;
+      background-color: #333;
+      height: 2px;
       right: 20px;
       position: absolute;
       top: 30px;
@@ -178,18 +190,23 @@
    }
 
    .line:nth-child(3) {
-      background-color: black;
+      background-color: #222;
       height: 2px;
-      right: 27px;
       position: absolute;
+      right: 25px;
       top: 40px;
-      width: 15px;
+      width: 18px;
       z-index: 10;
    }
 
    #body .line-container .toggle-color {
       background-color: #fff;
       height: 2px;
+   }
+
+   .navigation__container .navigation__list .toggle-link-color {
+      color: #fff;
+      font-size: 1.5rem;
    }
 
    .burger-border {
@@ -202,16 +219,15 @@
    .navigation {
       background-color: #444;
       display: grid;
-      grid-template-columns: 15vw 1fr;
+      grid-template-columns: 1fr;
       grid-template-rows: 10vh;
       height: 100vh;
       position: relative;
       transform: translateY(-50rem);
-      transition: 0.4s transform;
+      transition: 0.4s transform ease-in-out;
       z-index: 1;
 
       &__logo {
-         border: 1px solid rgb(70, 180, 79);
          display: none;
          font-size: 1.5rem;
          grid-column: 1;
@@ -236,6 +252,8 @@
          margin-left: 0;
          font-size: 1.8rem;
          color: #fff;
+         color: transparent;
+
       }
 
       &__welcome {
@@ -298,18 +316,18 @@
    }
 
    .line:first-child {
-      background-color: black;
+      background-color: #efefef;
       height: 2px;
       position: absolute;
+      right: 25px;
       top: 20px;
-      right: 27px;
-      width: 15px;
+      width: 18px;
       z-index: 10;
    }
 
    .line:nth-child(2) {
-      background-color: #777;
-      height: 4px;
+      background-color: rgb(223, 222, 222);
+      height: 2px;
       right: 20px;
       position: absolute;
       top: 30px;
@@ -318,18 +336,23 @@
    }
 
    .line:nth-child(3) {
-      background-color: black;
+      background-color: rgb(245, 245, 245);
       height: 2px;
-      right: 27px;
       position: absolute;
+      right: 25px;
       top: 40px;
-      width: 15px;
+      width: 18px;
       z-index: 10;
    }
 
    #body .line-container .toggle-color {
       background-color: #fff;
       height: 2px;
+   }
+
+   .navigation__container .navigation__list .toggle-link-color {
+      color: #fff;
+      font-size: 2rem;
    }
 
    .burger-border {

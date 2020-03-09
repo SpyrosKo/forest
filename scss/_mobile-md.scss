@@ -13,7 +13,7 @@
    }
 
    .header {
-      background: url('../images/bridge-under-white-clouds.jpg') center;
+      background: url('../images/bridge-under-white-clouds-faded.jpg') center;
       background-size: cover;
       background-position: center;
       height: 120vh;
@@ -26,18 +26,22 @@
       width: 100%;
 
       &__heading {
-         color: darken($font-color, 2%);
-         // color: #efefef;
+         // color: darken($font-color, 2%);
+         color: #fff;
          font-size: 2.8rem;
          grid-column: 2/4;
+         letter-spacing: 1px;
          line-height: 3.8rem;
          text-transform: uppercase;
       }
 
       &__subheading {
-         color: darken($font-color, 2%);
+         // color: darken($font-color, 2%);
+         color: #efefef;
          font-size: 1.3rem;
+         font-weight: normal;
          grid-column: 2;
+         letter-spacing: 1px;
          line-height: 2.3rem;
          padding: 1.5rem 0;
       }
@@ -45,12 +49,14 @@
       button.hero__button {
          border-width: 0;
          border-radius: 25px;
-         justify-self: center;
+         // justify-self: center;
+         justify-self: start;
          text-transform: uppercase;
-         background-color: #ffc107;
+         // background-color: #ffc107;
+         background-color: #00ad82;
          grid-column: 2;
-         margin: 2.5rem 0;
-         padding: 1rem 1rem;
+         margin: 4.5rem 0;
+         padding: 1.2rem 1.5rem;
          height: min-content;
 
          &:focus {
@@ -59,10 +65,12 @@
       }
 
       &__cta {
-         color: #222;
+         // color: #222;
+         color: #fff;
          cursor: pointer;
          font-weight: bolder;
-         font-size: 1rem;
+         font-size: 1.2rem;
+         letter-spacing: 1px;
          outline: none;
          outline-style: none;
       }
@@ -76,7 +84,9 @@
    }
 
    .nonprofit {
-      background-color: lighten($botticelli, 10%);
+      // background-color: lighten($botticelli, 10%);
+      background-color: lighten(#123654, 75%);
+
       grid-column: 2/3;
       padding: 0 0.5rem;
 
@@ -131,13 +141,15 @@
    }
 
    .member {
-      background-color: $botticelli;
-      padding-bottom: 1rem;
-      padding-top: 1rem;
+      // background-color: $botticelli;
+      background-color: #0f354a;
+      padding-bottom: 3rem;
+      padding-top: 2rem;
       text-align: center;
 
       &__paragraph {
-         color: $font-color;
+         // color: $font-color;
+         color: #fff;
          font-size: 1.3rem;
          font-weight: bold;
          line-height: 2.5rem;
@@ -145,17 +157,17 @@
       }
 
       &__button {
-         background-color: #0a5b00;
+         // background-color: #0a5b00;
+         background-color: #00ad82;
       }
 
       &__cta {
          color: #ffffff;
          font-size: 1.1rem;
-         font-weight: normal;
+         font-weight: bold;
          letter-spacing: 2px;
       }
    }
-
 
    .photos__container {
       max-width: 700px;
@@ -215,8 +227,8 @@
 
       &__figcaption {
          display: block;
-         max-width: 300px;
-         align-self: center;
+         max-width: 380px;
+         // align-self: center;
 
          h3 {
             padding: 0;
@@ -232,7 +244,8 @@
    }
 
    .footer {
-      background-color: lighten($botticelli, 10%);
+      // background-color: lighten($botticelli, 10%);
+      background-color: #0f354a;
 
       &__container {
          margin: auto;
@@ -254,7 +267,8 @@
       }
 
       &__header {
-         color: $font-color;
+         // color: $font-color;
+         color: #efffff;
          font-size: 1.5rem;
          letter-spacing: px;
          padding: 0.3rem 0;
@@ -266,13 +280,15 @@
          text-align: center;
 
          a {
-            color: darken($font-color, 10%);
+            // color: darken($font-color, 10%);
+            color: #efefef;
          }
       }
 
       &__bar {
          align-items: center;
-         background-color: darken($botticelli, 90%);
+         // background-color: darken($botticelli, 90%);
+         background-color: darken(#123654, 10%);
          display: flex;
          flex-direction: column;
          letter-spacing: 1px;

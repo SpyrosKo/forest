@@ -9,7 +9,9 @@
    font-family: Mont, sans-serif;
 }
 
-body {}
+body {
+   background-color: #123654;
+}
 
 li {
    list-style: none;
@@ -25,7 +27,8 @@ a {
 
 .active {
    font-weight: bold;
-   color: rgb(53, 0, 0);
+   // color: rgb(53, 0, 0);
+   color: #fff;
    text-decoration: none;
 }
 
@@ -48,9 +51,8 @@ button {
    text-transform: uppercase;
 }
 
-.navigation__link:hover {
-   color: #000;
-   text-decoration: underline;
+.top-grid {
+   background-color: #fff;
 }
 
 .photos__figcaption {
@@ -72,15 +74,15 @@ button {
 }
 
 @media only screen and (max-width:1000px) {
-   .photos__figure:nth-child(2) {
-      flex-direction: column-reverse;
-      align-items: center;
-   }
+   //    .photos__figure:nth-child(2) {
+   //    flex-direction: column-reverse;
+   //    align-items: center;
+   // }
 
-   .photos__figure:nth-child(2) p {
-      padding-top: 2rem;
-      margin-top: 1rem;
-   }
+   // .photos__figure:nth-child(2) p {
+   //    padding-top: 2rem;
+   //    margin-top: 1rem;
+   // }
 }
 
 

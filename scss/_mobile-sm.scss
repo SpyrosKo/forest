@@ -13,8 +13,8 @@
    }
 
    .header {
-      background: url('../images/bridge-under-white-clouds.jpg') center;
-      background-size: 40000%;
+      background: url('../images/bridge-under-white-clouds-faded.jpg') center;
+      background-size: cover;
       background-position: center;
       height: 120vh;
    }
@@ -31,6 +31,7 @@
          font-size: 2.8rem;
          grid-column: 2/4;
          line-height: 3.8rem;
+         padding-right: 2rem;
          text-transform: uppercase;
       }
 
@@ -46,9 +47,11 @@
       button.hero__button {
          border-width: 0;
          border-radius: 25px;
-         justify-self: center;
+         // justify-self: center;
+         justify-self: start;
          text-transform: uppercase;
-         background-color: #ffc107;
+         // background-color: #ffc107;
+         background-color: #00ad82;
          grid-column: 2;
          margin: 2.5rem 0;
          padding: 1rem 1rem;
@@ -60,10 +63,12 @@
       }
 
       &__cta {
-         color: #222;
+         // color: #222;
+         color: #fff;
          cursor: pointer;
          font-weight: bolder;
          font-size: 1rem;
+         letter-spacing: 1px;
          outline: none;
          outline-style: none;
       }
@@ -132,13 +137,15 @@
    }
 
    .member {
-      background-color: $botticelli;
-      padding-bottom: 1rem;
-      padding-top: 1rem;
+      // background-color: $botticelli;
+      background-color: #0f354a;
+      padding-bottom: 3rem;
+      padding-top: 2rem;
       text-align: center;
 
       &__paragraph {
-         color: $font-color;
+         // color: $font-color;
+         color: #fff;
          font-size: 1.3rem;
          font-weight: bold;
          line-height: 2.5rem;
@@ -146,17 +153,17 @@
       }
 
       &__button {
-         background-color: #0a5b00;
+         // background-color: #0a5b00;
+         background-color: #00ad82;
       }
 
       &__cta {
          color: #ffffff;
          font-size: 1.1rem;
-         font-weight: normal;
+         font-weight: bold;
          letter-spacing: 2px;
       }
    }
-
 
    .photos__container {
       max-width: 700px;
@@ -216,7 +223,7 @@
 
       &__figcaption {
          display: block;
-         max-width: 300px;
+         max-width: 380px;
          align-self: center;
 
          h3 {
@@ -233,7 +240,8 @@
    }
 
    .footer {
-      background-color: lighten($botticelli, 10%);
+      // background-color: lighten($botticelli, 10%);
+      background-color: #0f354a;
 
       &__container {
          margin: auto;
@@ -254,7 +262,8 @@
       }
 
       &__header {
-         color: $font-color;
+         // color: $font-color;
+         color: #efefef;
          font-size: 1.5rem;
          letter-spacing: px;
          padding: 0.3rem 0;
@@ -266,13 +275,15 @@
          text-align: center;
 
          a {
-            color: darken($font-color, 10%);
+            // color: darken($font-color, 10%);
+            color: #efffff;
          }
       }
 
       &__bar {
          align-items: center;
-         background-color: darken($botticelli, 90%);
+         // background-color: darken($botticelli, 90%);
+         background-color: darken(#123654, 10%);
          display: flex;
          flex-direction: column;
          letter-spacing: 1px;

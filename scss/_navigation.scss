@@ -4,11 +4,9 @@
 
 .navigation {
    align-items: center;
-   // background-color: darken($botticelli, 60%);
    background-color: #123654;
    display: grid;
    grid-template-columns: 16vw min-content 1fr;
-   // height: 4rem;
 
 
    &__logo {
@@ -19,8 +17,7 @@
       align-items: center;
 
       span {
-         // text-decoration: underline;
-         padding-left: 0.4rem;
+         // text-decoration: underline;         padding-left: 0.4rem;
       }
    }
 

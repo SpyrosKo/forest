@@ -1,5 +1,5 @@
 #hamburger {
-   display: none;
+   display: block;
 }
 
 .navigation {
@@ -68,289 +68,170 @@
 
 
 
-   .navigation {
-      // background-color: #444;
-      background-color: #123654;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 10vh;
-      height: 100vh;
+   // .navigation {
+   //    // background-color: #444;
+   //    background-color: #123654;
+   //    display: grid;
+   //    grid-template-columns: 1fr;
+   //    grid-template-rows: 10vh;
+   //    height: 100vh;
+   //    position: relative;
+   //    transform: translateY(-50rem);
+   //    z-index: 1;
+
+   //    &__logo {
+   //       display: none;
+   //       font-size: 1.5rem;
+   //       grid-column: 1;
+   //       grid-row: 1;
+   //       width: min-content;
+   //       justify-self: center;
+   //    }
+
+   //    &__container {
+   //       display: flex;
+   //       flex-direction: column;
+   //       grid-column: 1;
+   //       grid-row: 2;
+   //       position: relative;
+   //    }
+
+   //    &__list {
+   //       margin: 1.5rem;
+   //       margin: 2rem 0;
+   //    }
+
+   //    &__link {
+   //       margin-left: 0;
+   //       color: #fff;
+   //       color: transparent; 
+   //    }
+
+   //    &__welcome {
+   //       background-color: transparent;
+   //       border-radius: 0;
+   //       grid-column: 1;
+   //       grid-row: 3;
+   //       height: fit-content;
+   //       justify-self: center;
+   //       width: fit-content;
+   //    }
+
+   //    &__signin {
+   //       background-color: #fff;
+   //       border: 1px solid black;
+   //       border-radius: 50px;
+   //       font-size: 1.2rem;
+   //       cursor: pointer;
+   //       padding: 0.5rem 1rem;
+   //       display: none;
+
+   //       a {
+   //          color: black;
+   //       }
+   //    }
+   // }
+
+   .navigation-container {
       position: relative;
-      transform: translateY(-50rem);
-      z-index: 1;
-
-      &__logo {
-         display: none;
-         font-size: 1.5rem;
-         grid-column: 1;
-         grid-row: 1;
-         width: min-content;
-         justify-self: center;
-      }
-
-      &__container {
-         display: flex;
-         flex-direction: column;
-         grid-column: 1;
-         grid-row: 2;
-         position: relative;
-      }
-
-      &__list {
-         margin: 1.5rem;
-         margin: 2rem 0;
-      }
-
-      &__link {
-         margin-left: 0;
-         color: #fff;
-         color: transparent;
-
-      }
-
-      &__welcome {
-         background-color: transparent;
-         border-radius: 0;
-         grid-column: 1;
-         grid-row: 3;
-         height: fit-content;
-         justify-self: center;
-         width: fit-content;
-      }
-
-      &__signin {
-         background-color: #fff;
-         border: 1px solid black;
-         border-radius: 50px;
-         font-size: 1.2rem;
-         cursor: pointer;
-         padding: 0.5rem 1rem;
-         display: none;
-
-         a {
-            color: black;
-         }
-      }
+      margin: 35px auto 0;
+      width: 300px;
+      height: 534px;
+      background-color: #533557;
+      overflow: hidden;
    }
 
-   #hamburger {
-      display: block;
-      top: 15px;
-      opacity: 0;
-      padding: 2rem;
-      position: absolute;
-      right: 18px;
-      text-transform: uppercase;
-      cursor: pointer;
-      width: 2rem;
-      height: 2rem;
-      z-index: 6;
-
-      &:checked {
-         &~.navigation {
-            transform: translateY(0rem);
-         }
-
-         &~.header {
-            background-color: #fff;
-         }
-      }
-
-      &:not(:checked) {
-         &~.navigation {
-            height: 0;
-         }
-      }
+   // To hide the checkbox
+   #toggle {
+      display: none;
    }
 
-   .line-container {
-      cursor: pointer;
+   // Styles for the 'open' state, if the checkbox is checked
+   #toggle:checked {
+      // Any element you need to change the style if menu is open goes here, using the sibling selector (~) as follows
 
-      .line:first-child {
-         background-color: #fff;
-         height: 3px;
-         position: absolute;
-         right: 25px;
-         top: 20px;
-         width: 18px;
-         z-index: 10;
-      }
-
-      .line:nth-child(2) {
-         background-color: #fff;
-         height: 3px;
-         right: 20px;
-         position: absolute;
-         top: 30px;
-         width: 30px;
-         z-index: 10;
-      }
-
-      .line:nth-child(3) {
-         background-color: #fff;
-         height: 3px;
-         position: absolute;
-         right: 25px;
-         top: 40px;
-         width: 18px;
-         z-index: 10;
-      }
+      // Styles for the open navigation menu, for example
+      &~.nav {}
    }
 
+   $transition-duration: 0.5s;
 
-}
+   // Showing nav items as lines, making up the hamburger menu icon
 
-@include mediaSm {
 
-   .navigation {
-      // background-color: #444;background-color: #123654;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 10vh;
-      height: 100vh;
-      position: relative;
-      transform: translateY(-50rem);
-      transition: 0.4s transform ease-in-out;
-      z-index: 1;
 
-      &__logo {
-         display: none;
-         font-size: 1.5rem;
-         grid-column: 1;
-         grid-row: 1;
-         width: min-content;
-         justify-self: center;
-      }
 
-      &__container {
-         display: flex;
-         flex-direction: column;
-         grid-column: 1;
-         grid-row: 2;
-         position: relative;
-      }
+   // #hamburger {
+   //    display: block;
+   //    top: 15px;
+   //    opacity: 0.4;
+   //    padding: 2rem;
+   //    position: absolute;
+   //    right: 18px;
+   //    text-transform: uppercase;
+   //    cursor: pointer;
+   //    width: 2rem;
+   //    height: 2rem;
+   //    z-index: 11;
 
-      &__list {
-         margin: 1.6rem;
-      }
+   //    &:checked {
+   //       &~.navigation {
+   //          transform: translateY(0rem);
+   //       }
 
-      &__link {
-         margin-left: 0;
-         font-size: 1.8rem;
-         color: #fff;
-         color: transparent;
-      }
+   //       &~.header {
+   //          background-color: #fff;
+   //       }
 
-      &__welcome {
-         background-color: transparent;
-         border-radius: 0;
-         grid-column: 1;
-         grid-row: 3;
-         height: fit-content;
-         justify-self: center;
-         width: fit-content;
-      }
+   //       &~.line:first-child {
+   //          background-color: #0000ff;
+   //          width: 50px;
+   //       }
+   //    }
 
-      &__signin {
-         background-color: #fff;
-         border: 1px solid black;
-         border-radius: 50px;
-         font-size: 1.2rem;
-         cursor: pointer;
-         padding: 0.5rem 1rem;
-         display: none;
+   //    &:not(:checked) {
+   //       &~.navigation {
+   //          height: 0;
+   //       }
+   //    }
+   // }
 
-         a {
-            color: black;
-         }
-      }
-   }
+   // .line-container {
+   //    display: block;
+   //    position: relative;
+   //    right: 0;
+   //    top: 18px;
+   //    width: 100%;
+   //    margin: 0;
 
-   #hamburger {
-      display: block;
-      top: 15px;
-      opacity: 0;
-      padding: 2rem;
-      position: absolute;
-      right: 18px;
-      text-transform: uppercase;
-      cursor: pointer;
-      width: 2rem;
-      height: 2rem;
-      z-index: 6;
+   //    .line:first-child {
+   //       background-color: #fff;
+   //       height: 3px;
+   //       position: absolute;
+   //       right: 18px;
+   //       top: 0;
+   //       width: 30px;
+   //       z-index: 10;
+   //    }
 
-      &:checked {
-         &~.navigation {
-            transform: translateY(0rem);
-         }
+   //    .line:nth-child(2) {
+   //       background-color: #fff;
+   //       height: 3px;
+   //       position: absolute;
+   //       right: 18px;
+   //       top: 10px;
+   //       width: 30px;
+   //       z-index: 10;
+   //    }
 
-         &~.header {
-            background-color: #fff;
-         }
-
-         &~.line {
-            background-color: green;
-            height: 2px;
-            position: absolute;
-            right: 25px;
-            top: 20px;
-            width: 18px;
-            z-index: 10;
-         }
-      }
-
-      &:not(:checked) {
-         &~.navigation {
-            height: 0;
-         }
-      }
-   }
-
-   .line-container {
-      cursor: pointer;
-
-      .line:first-child {
-         background-color: #fff;
-         height: 3px;
-         position: absolute;
-         right: 25px;
-         top: 20px;
-         width: 18px;
-         z-index: 10;
-      }
-
-      .line:nth-child(2) {
-         background-color: #fff;
-         height: 3px;
-         right: 20px;
-         position: absolute;
-         top: 30px;
-         width: 30px;
-         z-index: 10;
-      }
-
-      .line:nth-child(3) {
-         background-color: #fff;
-         height: 3px;
-         position: absolute;
-         right: 25px;
-         top: 40px;
-         width: 18px;
-         z-index: 10;
-      }
-   }
-
-   #body .line-container .toggle-color {
-      background-color: #fff;
-      height: 2px;
-   }
-
-   .navigation__container .navigation__list .toggle-link-color {
-      color: #fff;
-      font-size: 1.5rem;
-   }
-
-   .burger-border {
-      border: 1px solid #fff;
-   }
+   //    .line:nth-child(3) {
+   //       background-color: #fff;
+   //       height: 3px;
+   //       position: absolute;
+   //       right: 18px;
+   //       top: 20px;
+   //       width: 30px;
+   //       z-index: 10;
+   //    }
+   // }
 }

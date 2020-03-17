@@ -23,51 +23,63 @@
 
 <body id="body">
 
-  <!-- Mobile Navigation -->
-  <input id="hamburger" class="navigation__burger" type="checkbox">
-  <div class="line-container">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
+  <div class="navigation-container">
+
+    <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+    <input id="toggle" type="checkbox">
+
+    <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
+
+
+    <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
+    <label class="toggle-container" for="hamburger">
+      <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
+      <span class="button button-toggle"></span>
+    </label>
+
+    <!-- The nav menu -->
+    <nav class="navigation">
+      <!-- Logo -->
+      <a class="navigation__logo" href="#">
+        <img src="icons/logo.png" alt="Oak Logo Design" style="width: 40px; height: 40px;">
+        <span style="font-size: 0.9rem;font-weight: bold; color: #bae0bd;">OakTree</span>
+      </a>
+      <!-- Menu -->
+      <ul class="navigation__container">
+        <li class="navigation__list">
+          <a class="navigation__link active" href="#">
+            Home
+          </a>
+        </li>
+        <li class="navigation__list">
+          <a class="navigation__link" href="#">
+            News
+          </a>
+        </li>
+        <li class="navigation__list">
+          <a class="navigation__link" href="#">
+            Volunteer
+          </a>
+        </li>
+        <li class="navigation__list">
+          <a class="navigation__link" href="https://www.last.fm/home">
+            Donate
+          </a>
+        </li>
+      </ul>
+      <!-- Sign In  -->
+      <button class="navigation__welcome">
+        <a id="sign-in" class="navigation__signin" href="#">
+          Sign In
+        </a>
+      </button>
+    </nav>
+
   </div>
 
 
-  <nav class="navigation">
-    <!-- Logo -->
-    <a class="navigation__logo" href="#">
-      <img src="icons/logo.png" alt="Oak Logo Design" style="width: 40px; height: 40px;">
-      <span style="font-size: 0.9rem;font-weight: bold; color: #bae0bd;">OakTree</span>
-    </a>
-    <!-- Menu -->
-    <ul class="navigation__container">
-      <li class="navigation__list">
-        <a class="navigation__link active" href="#">
-          Home
-        </a>
-      </li>
-      <li class="navigation__list">
-        <a class="navigation__link" href="#">
-          News
-        </a>
-      </li>
-      <li class="navigation__list">
-        <a class="navigation__link" href="#">
-          Volunteer
-        </a>
-      </li>
-      <li class="navigation__list">
-        <a class="navigation__link" href="https://www.last.fm/home">
-          Donate
-        </a>
-      </li>
-    </ul>
-    <!-- Sign In  -->
-    <button class="navigation__welcome">
-      <a id="sign-in" class="navigation__signin" href="#">
-        Sign In
-      </a>
-    </button>
-  </nav>
+
+
 
   <header class="header">
     <div class="hero">

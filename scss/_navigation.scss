@@ -1,237 +1,158 @@
-#hamburger {
+#omega {
+   padding: 0.5rem 2rem;
+}
+
+#omega-button {
+   display: none;
+}
+
+#omega-content nav ul {
+   display: inline-block;
+   font-family: Mont,
+      sans-serif;
+   margin-right: 2em;
+}
+
+#omega-content nav ul li a {
+   padding: 0 0.5em;
+   color: #fff;
+   font-weight: 400;
+   text-transform: uppercase;
+}
+
+#omega-content nav ul li,
+#omega-content #logo,
+#omega-content nav {
+   display: inline-block;
+}
+
+#logo img {
+   width: 50px;
+}
+
+.omega-links {
+   display: inline-block;
+}
+
+#omega-content {
+   float: right;
+}
+
+#omega-overlay {
+   display: none;
+   position: fixed;
+   z-index: 10;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, .5);
+}
+
+#omega-sidebar {
+   display: none;
+   position: fixed;
+   width: 80%;
+   z-index: 20;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: hsla(201, 100%, 32%, 0.774);
+   transform: translateX(-100%);
+   transition: transform .2s ease-in-out;
+}
+
+#omega-sidebar-header {
+   background-image: url(../img/bg.png);
+   background-size: cover;
+   height: 180px;
+}
+
+#omega-sidebar-body {
+   padding: 1em;
+}
+
+#omega-sidebar-body nav ul li {
+   list-style: none;
    display: block;
 }
 
-.navigation {
-   align-items: center;
-   background-color: #123654;
-   display: grid;
-   grid-template-columns: 16vw min-content 1fr;
-
-
-   &__logo {
-      color: #efefef;
-      display: flex;
-      font-size: 1.5rem;
-      grid-column: 2;
-      align-items: center;
-
-      span {
-         // text-decoration: underline;         padding-left: 0.4rem;
-      }
-   }
-
-   &__container {
-      align-items: center;
-      display: flex;
-      justify-content: flex-end;
-      flex-wrap: wrap;
-   }
-
-   &__link {
-      // color: #000000;
-      color: #efefef;
-      font-weight: normal;
-      font-size: 0.9rem;
-      margin-left: 2rem;
-      text-transform: uppercase;
-
-      &:hover {
-         color: white;
-      }
-   }
-
-   &__welcome {
-      background-color: transparent;
-      border-radius: 0;
-      grid-column: 4;
-      height: fit-content;
-      margin: 0;
-      margin-left: 1.5rem;
-      width: fit-content;
-   }
-
-   &__signin {
-      background-color: #fff;
-      border: 1px solid black;
-      border-radius: 50px;
-      cursor: pointer;
-      padding: 0.5rem;
-
-      a {
-         color: black;
-      }
-   }
+#omega-sidebar-body nav ul li:before {
+   content: ' ';
+   font-family: "Font Awesome 5 Free";
+   display: inline-block;
+   vertical-align: middle;
+   width: 24px;
+   height: 24px;
+   margin-right: 5px;
+   margin-bottom: 4px;
 }
 
-@include mediaMd {
+#omega-sidebar-body nav ul li:first-child:before {
+   content: "\f015";
+   font-family: "Font Awesome 5 Free";
+   font-weight: 900;
+}
 
+#omega-sidebar-body nav ul li:nth-child(2):before {
+   content: "\f15c";
+   font-family: "Font Awesome 5 Free";
+   font-weight: 900;
+}
 
+#omega-sidebar-body nav ul li:nth-child(3):before {
+   content: "\f15c";
+   font-family: "Font Awesome 5 Free";
+   font-weight: 900;
+}
 
-   // .navigation {
-   //    // background-color: #444;
-   //    background-color: #123654;
-   //    display: grid;
-   //    grid-template-columns: 1fr;
-   //    grid-template-rows: 10vh;
-   //    height: 100vh;
-   //    position: relative;
-   //    transform: translateY(-50rem);
-   //    z-index: 1;
+#omega-sidebar-body nav ul li:nth-child(4):before {
+   content: "\f2bb";
+   font-family: "Font Awesome 5 Free";
+   font-weight: 900;
+}
 
-   //    &__logo {
-   //       display: none;
-   //       font-size: 1.5rem;
-   //       grid-column: 1;
-   //       grid-row: 1;
-   //       width: min-content;
-   //       justify-self: center;
-   //    }
+#omega-sidebar-body nav ul li a {
+   display: inline-block;
+   text-transform: uppercase;
+   font-weight: 700;
+   font-size: 1.3rem;
+   padding: 0.5em;
+   color: #fff;
+}
 
-   //    &__container {
-   //       display: flex;
-   //       flex-direction: column;
-   //       grid-column: 1;
-   //       grid-row: 2;
-   //       position: relative;
-   //    }
+#omega-sidebar-body nav ul li a:hover {
+   color: #9b4dca;
+}
 
-   //    &__list {
-   //       margin: 1.5rem;
-   //       margin: 2rem 0;
-   //    }
+#omega-sidebar-body .omega-links a {
+   display: block;
+   margin-bottom: 1em;
+}
 
-   //    &__link {
-   //       margin-left: 0;
-   //       color: #fff;
-   //       color: transparent; 
-   //    }
+@media only screen and (max-width: 850px) {
 
-   //    &__welcome {
-   //       background-color: transparent;
-   //       border-radius: 0;
-   //       grid-column: 1;
-   //       grid-row: 3;
-   //       height: fit-content;
-   //       justify-self: center;
-   //       width: fit-content;
-   //    }
-
-   //    &__signin {
-   //       background-color: #fff;
-   //       border: 1px solid black;
-   //       border-radius: 50px;
-   //       font-size: 1.2rem;
-   //       cursor: pointer;
-   //       padding: 0.5rem 1rem;
-   //       display: none;
-
-   //       a {
-   //          color: black;
-   //       }
-   //    }
-   // }
-
-   .navigation-container {
-      position: relative;
-      margin: 35px auto 0;
-      width: 300px;
-      height: 534px;
-      background-color: #533557;
-      overflow: hidden;
-   }
-
-   // To hide the checkbox
-   #toggle {
+   #omega-content {
       display: none;
    }
 
-   // Styles for the 'open' state, if the checkbox is checked
-   #toggle:checked {
-      // Any element you need to change the style if menu is open goes here, using the sibling selector (~) as follows
-
-      // Styles for the open navigation menu, for example
-      &~.nav {}
+   #omega-button {
+      float: right;
+      cursor: pointer;
    }
 
-   $transition-duration: 0.5s;
+   .omega-links {
+      display: block;
+      margin-top: 2em;
+   }
 
-   // Showing nav items as lines, making up the hamburger menu icon
+   #omega-button,
+   #omega-sidebar,
+   .omega-activated #omega-overlay {
+      display: block;
+   }
 
-
-
-
-   // #hamburger {
-   //    display: block;
-   //    top: 15px;
-   //    opacity: 0.4;
-   //    padding: 2rem;
-   //    position: absolute;
-   //    right: 18px;
-   //    text-transform: uppercase;
-   //    cursor: pointer;
-   //    width: 2rem;
-   //    height: 2rem;
-   //    z-index: 11;
-
-   //    &:checked {
-   //       &~.navigation {
-   //          transform: translateY(0rem);
-   //       }
-
-   //       &~.header {
-   //          background-color: #fff;
-   //       }
-
-   //       &~.line:first-child {
-   //          background-color: #0000ff;
-   //          width: 50px;
-   //       }
-   //    }
-
-   //    &:not(:checked) {
-   //       &~.navigation {
-   //          height: 0;
-   //       }
-   //    }
-   // }
-
-   // .line-container {
-   //    display: block;
-   //    position: relative;
-   //    right: 0;
-   //    top: 18px;
-   //    width: 100%;
-   //    margin: 0;
-
-   //    .line:first-child {
-   //       background-color: #fff;
-   //       height: 3px;
-   //       position: absolute;
-   //       right: 18px;
-   //       top: 0;
-   //       width: 30px;
-   //       z-index: 10;
-   //    }
-
-   //    .line:nth-child(2) {
-   //       background-color: #fff;
-   //       height: 3px;
-   //       position: absolute;
-   //       right: 18px;
-   //       top: 10px;
-   //       width: 30px;
-   //       z-index: 10;
-   //    }
-
-   //    .line:nth-child(3) {
-   //       background-color: #fff;
-   //       height: 3px;
-   //       position: absolute;
-   //       right: 18px;
-   //       top: 20px;
-   //       width: 30px;
-   //       z-index: 10;
-   //    }
-   // }
+   .omega-activated #omega-sidebar {
+      transform: translateX(0);
+   }
 }

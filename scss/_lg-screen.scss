@@ -80,7 +80,7 @@
       // background-color: lighten($botticelli, 10%);
       background-color: lighten(#123654, 75%);
       grid-column: 2/3;
-      grid-row: 1.5;
+      // grid-row: 1.5;
       padding-bottom: 1.5rem;
       padding-top: 1.5rem;
       padding-left: 1rem;
@@ -89,6 +89,7 @@
 
       &__container {
          font-size: 1.2rem;
+         flex-direction: column;
 
          span {
             font-weight: normal;
@@ -241,8 +242,6 @@
    }
 
    .footer {
-      // background-color: lighten($botticelli, 10%);
-      // background-color: #0f354a;
       background-color: #123654;
 
       &__container {
@@ -262,10 +261,13 @@
 
       &__column {
          justify-self: center;
+
+         ul {
+            flex-direction: column;
+         }
       }
 
       &__header {
-         // color: $font-color;
          color: #efffff;
          font-size: 1.5rem;
          padding: 1rem 0;
@@ -277,14 +279,12 @@
          text-align: center;
 
          a {
-            // color: darken($font-color, 10%);
             color: #efffff;
          }
       }
 
       &__bar {
          align-items: center;
-         // background-color: darken($botticelli, 90%);
          background-color: darken(#123654, 10%);
          display: flex;
          justify-content: space-around;

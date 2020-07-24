@@ -37,7 +37,7 @@
       grid-template-columns: 15vw auto 15vw;
       padding-top: 7rem;
       width: 100%;
-      z-index: 1;
+      // z-index: 1;
 
       &__heading {
          color: #fff;
@@ -253,7 +253,6 @@
    }
 
    .footer {
-      // background-color: lighten($botticelli, 10%);
       background-color: #0f354a;
 
       &__container {
@@ -276,7 +275,6 @@
       }
 
       &__header {
-         // color: $font-color;
          color: #efffff;
          font-size: 1.5rem;
          letter-spacing: px;
@@ -289,14 +287,12 @@
          text-align: center;
 
          a {
-            // color: darken($font-color, 10%);
             color: #efefef;
          }
       }
 
       &__bar {
          align-items: center;
-         // background-color: darken($botticelli, 90%);
          background-color: darken(#123654, 10%);
          display: flex;
          flex-direction: column;

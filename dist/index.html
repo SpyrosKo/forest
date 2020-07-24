@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <meta property="og:title" content="Save the Dryad Forest" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://thinnling.github.io/forest/" />
@@ -10,7 +9,6 @@
   <meta property="og:description"
     content="A nonprofit to raise money to save the Dryad Forest. It's been around for many millennia and the Dryads will go extinct unless everyone helps that can help." />
   <meta property="og:locale" content="en-US" />
-
   <meta lang="en" />
   <meta name="author" content="RoKo" />
   <meta description="This is a concept piece for a National Forest Foundation." />
@@ -22,232 +20,139 @@
 </head>
 
 <body id="body">
+  <div id="home"></div>
+  <div id="omega">
+    <a href="#" id="logo">
+      <img src="/dist/icons/sunflower.svg" alt="Sunflower Inc.">
+    </a>
+    <div id="omega-content">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#volunteer">Volunteer</a></li>
+          <li><a href="#photos">Photos</a></li>
+        </ul>
+      </nav>
 
-  <div class="navigation-container">
-
-    <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
-    <input id="toggle" type="checkbox">
-
-    <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
-
-
-    <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
-    <label class="toggle-container" for="hamburger">
-      <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
-      <span class="button button-toggle"></span>
-    </label>
-
-    <!-- The nav menu -->
-    <nav class="navigation">
-      <!-- Logo -->
-      <a class="navigation__logo" href="#">
-        <img src="icons/logo.png" alt="Oak Logo Design" style="width: 40px; height: 40px;">
-        <span style="font-size: 0.9rem;font-weight: bold; color: #bae0bd;">OakTree</span>
-      </a>
-      <!-- Menu -->
-      <ul class="navigation__container">
-        <li class="navigation__list">
-          <a class="navigation__link active" href="#">
-            Home
-          </a>
-        </li>
-        <li class="navigation__list">
-          <a class="navigation__link" href="#">
-            News
-          </a>
-        </li>
-        <li class="navigation__list">
-          <a class="navigation__link" href="#">
-            Volunteer
-          </a>
-        </li>
-        <li class="navigation__list">
-          <a class="navigation__link" href="https://www.last.fm/home">
-            Donate
-          </a>
-        </li>
-      </ul>
-      <!-- Sign In  -->
-      <button class="navigation__welcome">
-        <a id="sign-in" class="navigation__signin" href="#">
-          Sign In
-        </a>
-      </button>
-    </nav>
-
+    </div>
+    <button id="omega-button">&#9776;</button>
+    <div id="omega-sidebar">
+      <div id="omega-sidebar-header"></div>
+      <div id="omega-sidebar-body"></div>
+    </div>
+    <div id="omega-overlay"></div>
   </div>
-
-
-
-
 
   <header class="header">
     <div class="hero">
-      <h1 class="hero__heading">
-        Give the gift of nature
-      </h1>
-      <h2 class="hero__subheading">
-        Hug a tree today and you can help save the world of tomorrow. We need
-        your help to protect our forests.
-      </h2>
-      <button class="hero__button">
-        <a class="hero__cta" href="#">
-          Save our forests
-        </a>
-      </button>
+      <h1 class="hero__heading">Give the gift of nature </h1>
+      <h2 class="hero__subheading">Hug a tree today and you can help save the world of tomorrow. We need your help to
+        protect our forests. </h2><button class="hero__button"><a class="hero__cta" href="#">Save our forests
+        </a></button>
     </div>
   </header>
-
   <main class="main">
+    <div class="box-try">
+      <a href="#" class="try"></a>
+    </div>
 
+    <div id="about"></div>
     <div class="top-grid">
       <div class="nonprofit">
-        <h2 class="nonprofit__heading">
-          At a glance
-        </h2>
+        <h2 class="nonprofit__heading">At a glance </h2>
         <ul class="nonprofit__container">
-          <li class="nonprofit__list">
-            Founded: <span class="nonprofit__span">1901</span>
-          </li>
-          <li class="nonprofit__list">
-            Staff: <span class="nonprofit__span">2</span>
-          </li>
-          <li class="nonprofit__list">
-            Founder: <span class="nonprofit__span">Jolie Ko</span>
-          </li>
-          <li class="nonprofit__list">
-            Office HQ: <span class="nonprofit__span">Landover, Washington</span>
-          </li>
-          <li class="nonprofit__list">
-            Ultimate Vision:
-            <span class="nonprofit__span">To revitalize the woodlands.</span>
-          </li>
+          <li class="nonprofit__list">Founded: <span class="nonprofit__span">1901</span></li>
+          <li class="nonprofit__list">Staff: <span class="nonprofit__span">2</span></li>
+          <li class="nonprofit__list">Founder: <span class="nonprofit__span">Jolie Ko</span></li>
+          <li class="nonprofit__list">Office HQ: <span class="nonprofit__span">Landover,
+              Washington</span></li>
+          <li class="nonprofit__list">Ultimate Vision: <span class="nonprofit__span">To revitalize the
+              woodlands.</span></li>
         </ul>
       </div>
-
       <div class="about">
         <h2 class="about__header">About this Park</h2>
-        <p class="about__paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum
-          tellus a erat condimentum, at ullamcorper leo interdum. Morbi porta,
-          mi eget rutrum fermentum, leo eros rhoncus turpis, in posuere massa
-          ligula efficitur turpis.
-        </p>
-        <p class="about__paragraph">
-          Hyphenation rules are language-specific. In HTML, the language is
-          determined by the lang attribute, and browsers will hyphenate only
-          ifffasasasas this attribute is present and if an appropriate
-          hyphenation dictionary is available. In XML, the xml:lang attribute
-          must be used.
-        </p>
+        <p class="about__paragraph">Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Sed fermentum tellus a erat condimentum,
+          at ullamcorper leo interdum. Morbi porta,
+          mi eget rutrum fermentum,
+          leo eros rhoncus turpis,
+          in posuere massa ligula efficitur turpis. </p>
+        <p class="about__paragraph">Hyphenation rules are language-specific. In HTML,
+          the language is determined by the lang attribute,
+          and browsers will hyphenate only ifffasasasas this attribute is present and if an appropriate hyphenation
+          dictionary is available. In XML,
+          the xml:lang attribute must be used. </p>
         <figure class="about__figure">
-          <blockquote class="about__blockquote">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          </blockquote>
-          <cite class="about__cite">-- Majestic Woodlands</cite>
+          <blockquote class="about__blockquote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          </blockquote><cite class="about__cite">-- Majestic Woodlands</cite>
         </figure>
-        <p class="about__paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum
-          tellus a erat condimentum, at ullamcorper leo interdum. Morbi porta,
-          mi eget rutrum fermentum, leo eros rhoncus turpis, in posuere massa
-          ligula efficitur turpis.
-        </p>
+        <p class="about__paragraph">Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Sed fermentum tellus a erat condimentum,
+          at ullamcorper leo interdum. Morbi porta,
+          mi eget rutrum fermentum,
+          leo eros rhoncus turpis,
+          in posuere massa ligula efficitur turpis. </p>
       </div>
     </div>
 
+    <div id="volunteer"></div>
     <div class="member">
-      <p class="member__paragraph">
-        Help us keep
-        <br />
-        our forests clean!
-      </p>
-      <button class="member__button">
-        <a class="member__cta" href="#">
-          Become a member
-        </a>
-      </button>
+      <p class="member__paragraph">Help us keep <br />our forests clean ! </p><button class="member__button"><a
+          class="member__cta" href="#">Become a member </a></button>
     </div>
 
+    <div id="photos"></div>
     <div class="photos__container">
-
       <div class="photos">
         <section class="photos__headers">
           <h2 class="photos__header">Photography</h2>
-          <p class="photos__paragraph">
-            These are some of the most popular spots in the park.
-          </p>
+          <p class="photos__paragraph">These are some of the most popular spots in the park. </p>
         </section>
-
         <div class="photos__grid">
-
-          <figure class="photos__figure">
-            <a class="photos__link" href="https://www.pinterest.com/bmsmjmcgrat/worms-eye-view-trees/">
-              <img class="photos__image" src="images/forest-wormview-500x500-ToddTrapani.jpg" alt="Forest in mist" />
-            </a>
+          <figure class="photos__figure"><a class="photos__link"
+              href="https://www.pinterest.com/bmsmjmcgrat/worms-eye-view-trees/"><img class="photos__image"
+                src="images/forest-wormview-500x500-ToddTrapani.jpg" alt="Forest in mist" /></a>
             <figcaption class="photos__figcaption">
-              <h3>
-                Worm's eye view of some majestic trees.
+              <h3>Worm's eye view of some majestic trees.
               </h3>
-              <p>
-                A Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptas dolorem quod nesciunt nostrum earum
-                quasi? Repellat voluptates quae est dolore sequi aut, blanditiis maiores facilis provident doloribus
-                esse
-                quaerat magni dolorem!
-              </p>
+              <p>A Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorem quod nesciunt nostrum
+                earum quasi? Repellat voluptates quae est dolore sequi aut,
+                blanditiis maiores facilis provident doloribus esse quaerat magni dolorem ! </p>
             </figcaption>
           </figure>
-
-          <figure class="photos__figure">
-            <a class="photos__link" href="https://swtbook.wordpress.com/2014/07/12/little-elephant/">
-              <img class="photos__image" src="images/animal-elephant-500x500-Pixabay.jpg"
-                alt="Elephant in the forest" />
-            </a>
+          <figure class="photos__figure"><a class="photos__link"
+              href="https://swtbook.wordpress.com/2014/07/12/little-elephant/"><img class="photos__image"
+                src="images/animal-elephant-500x500-Pixabay.jpg" alt="Elephant in the forest" /></a>
             <figcaption class="photos__figcaption">
-              <h3>
-                An elephant roaming the forest in sunlight.
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptas dolorem quod nesciunt nostrum earum
-                quasi? Repellat
-                voluptates quae est dolore sequi aut, blanditiis maiores facilis provident doloribus esse quaerat magni
-                dolorem!
-              </p>
+              <h3>An elephant roaming the forest in sunlight. </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorem quod nesciunt nostrum earum
+                quasi? Repellat voluptates quae est dolore sequi aut,
+                blanditiis maiores facilis provident doloribus esse quaerat magni dolorem ! </p>
             </figcaption>
           </figure>
-
           <div class="figure__container">
-            <figure class="photos__figure">
-              <a class="photos__link a1"
-                href="https://www.videoblocks.com/video/group-of-people-are-sitting-next-to-a-campfire-next-to-a-tent-in-an-autumn-forest-r1gkm69imxs9rr8">
-                <img class="photos__image a1" src="images/bonfire-burning-camping-500x500-EmreKuzu.jpg"
-                  alt="Man near a bonfire" />
-              </a>
+            <figure class="photos__figure"><a class="photos__link a1"
+                href="https://www.videoblocks.com/video/group-of-people-are-sitting-next-to-a-campfire-next-to-a-tent-in-an-autumn-forest-r1gkm69imxs9rr8"><img
+                  class="photos__image a1" src="images/bonfire-burning-camping-500x500-EmreKuzu.jpg"
+                  alt="Man near a bonfire" /></a>
               <figcaption class="photos__figcaption a2">
-                <h3>
-                  A man around a campfire at night.
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-                  dolorem quod nesciunt nostrum earum
-                  quasi? Repellat
-                  voluptates quae est dolore sequi aut, blanditiis maiores facilis provident doloribus esse quaerat
-                  magni
-                  dolorem!
-                </p>
+                <h3>A man around a campfire at night. </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorem quod nesciunt nostrum
+                  earum quasi? Repellat voluptates quae est dolore sequi aut,
+                  blanditiis maiores facilis provident doloribus esse quaerat magni dolorem ! </p>
               </figcaption>
             </figure>
           </div>
         </div>
       </div>
   </main>
-
-  <!-- FOOTER  -->
-
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer__container">
       <div class="footer__sitemap">
+
         <div class="footer__column">
           <h3 class="footer__header">
             Resources
@@ -331,37 +236,35 @@
             </li>
           </ul>
         </div>
+
       </div>
     </div>
 
     <div class="footer__bar">
       <div class="footer__copyright">
-        <p>
-          &copy; 2019 NationalForests.com
-        </p>
+        <p>&copy;
+          2019 NationalForests.com </p>
       </div>
       <div class="footer__contact">
-        <p>
-          123 Forest Avenue, Metroplois, Oregon, 98001
-        </p>
+        <p>123 Forest Avenue,
+          Metroplois,
+          Oregon,
+          98001 </p>
       </div>
       <div class="footer__social">
         <a href="https://www.instagram.com/?hl=en">
           <img class="footer__icon" src="icons/instagram-brands.svg" alt="Instagram link">
         </a>
         <a href="https://www.facebook.com/">
-          <img class="footer__icon" src="icons/facebook-f-brands.svg" alt="Facebook link">
-        </a>
+          <img class="footer__icon" src="icons/facebook-f-brands.svg" alt="Facebook link"></a>
         <a href="https://www.pinterest.com/">
           <img class="footer__icon" src="icons/pinterest-p-brands.svg" alt="Pinterest link">
         </a>
         <a href="https://twitter.com/">
-          <img class="footer__icon" src="icons/twitter-brands.svg" alt="Twitter link">
-        </a>
+          <img class="footer__icon" src="icons/twitter-brands.svg" alt="Twitter link"></a>
       </div>
     </div>
   </footer>
-
   <script src="js/script.js"></script>
 </body>
 

@@ -29,7 +29,6 @@ a {
 
 .active {
    font-weight: bold;
-   // color: rgb(53, 0, 0);
    color: #fff;
    text-decoration: none;
 }
@@ -89,6 +88,6 @@ button {
 
 
 
+@import '_lg-screen';
 @import '_mobile-md';
 @import '_mobile-sm';
-@import '_lg-screen';

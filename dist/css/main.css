@@ -27,7 +27,7 @@
 
 #omega-content nav ul {
   display: inline-block;
-  font-family: Mont, sans-serif;
+  font-family: Mont, sans-serif;
   margin-right: 2em;
 }
 
@@ -200,6 +200,10 @@ a {
 a:hover {
   -webkit-transition: color 0.1s;
   transition: color 0.1s;
+}
+
+a[data-tool-tip] {
+  font-size: purple;
 }
 
 .active {
